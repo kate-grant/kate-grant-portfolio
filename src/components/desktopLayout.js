@@ -1,22 +1,24 @@
 import * as React from "react";
-import MorphContainer from "./morphContainer";
-import * as styles from "./desktopLayout.module.css";
+import MorphContainer from "./MorphContainer";
+import * as styles from "./DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
 
 
   return (
-    <main>
-      <div>
-        <h1>Kate<br/>Grant</h1>
+    <main className={styles.main}>
+      <div className={styles.left}>
+        <h1 className={styles.h1}>KATE<br/>&nbsp;GRANT</h1>
+        <h2 className={styles.h2}>I am a fullstack software engineer with a love of functional programming.</h2>
       </div>
       {/* Name
           Terminal
           Statement */}
-      <div class={styles.vertical}></div>
-      <MorphContainer>
-        <h2>Morph Here</h2>
-      </MorphContainer>
+      <div className={styles.vertical}></div>
+      <div className={styles.morph}>
+        <MorphContainer className={styles.morph}>
+        </MorphContainer>
+      </div>
     </main>
   )
 }

@@ -1,8 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  background-color: #702121;
+  padding-left: 5px;
+}
+
+.main {
+  width: 100vh;
+}
+
+.left {
+  width: 45vw;
+  float: left;
+}
+
+.h1 {
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
+  -webkit-text-stroke:2px #dd1e74;
+  -webkit-text-fill-color:transparent;
+}
+
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #dd1e74;
+}
+
 .vertical {
-  border-left: 6px solid #ff00ae;
+  border-left: 6px solid #dd1e74;
   height: 80%;
   position: absolute;
   left: 50%;
   margin-left: -3px;
   top: 10%;
+}
+
+.morph {
+  float: right;
 }
