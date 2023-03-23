@@ -18,6 +18,7 @@
 }
 
 .h1 {
+  margin-top: 5px;
   font-family: 'Kaisei Tokumin', serif;
   font-weight: 700;
   font-style: italic;
@@ -33,13 +34,6 @@
   font-weight: 700;
   font-size: 2rem;
   color: #dd1e74;
-}
-
-.terminalOuterContainer {
-  height: 30vh;
-  outline: 1px solid #dd1e74;
-  padding: 8px;
-  border-radius: 15px;
 }
 
 .vertical {

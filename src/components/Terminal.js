@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Menu from "./Menu";
 import * as styles from "./terminal.module.css";
 
@@ -9,11 +9,11 @@ const Terminal = () => {
   let [prevLines, setPrevLines] = useState([]);
   let [alreadyTyped, setAlreadyTyped] = useState([]);
   let [sentence, setSentence] = useState("");
-  let n = 0;
-  let innerInterval;
+  const n = useRef(0);
+  const innerInterval = useRef(null);
 
 
-function typer() {
+const typer = useCallback(() => {
   let count = 0;
   return function (
     inputStr,
@@ -31,24 +31,26 @@ function typer() {
       console.log('1 input', inputStr);
       let typeTimer = setInterval(function () {
         console.log('2');
-        n = n + 1; // n counts chars in "typing" string animation for slice
-        setSentence(`${idText} ${currentDir} % ` + inputStr.slice(0, n));
-        if (n === inputStr.length + 2) {
+        n.current = n.current + 1; // n counts chars in "typing" string animation for slice
+        setSentence(`${idText} ${currentDir} % ` + inputStr.slice(0, n.current));
+        if (n.current === inputStr.length + 2) {
           clearInterval(typeTimer); // if count is greater than string plus caret stop typing animation
 
           setSentence(`${idText} ${nextDir} %`); // then set prompt to include nextDir
 
-          n = 0; // reset n to be ready for next typing animation
-          innerInterval = setInterval(function () { // secondary interval for caret blink
+          n.current = 0; // reset n to be ready for next typing animation
+          const blinkInterval = setInterval(function () { // secondary interval for caret blink
 
-            if (n === 0) { // if n has been reset, show caret and set n to 1
-              sentence = `${idText} ${nextDir} % ${caret}`;
-              n = 1;
+            if (n.current === 0) { // if n has been reset, show caret and set n to 1
+              setSentence(`${idText} ${nextDir} % ${caret}`);
+              n.current = 1;
             } else { // if n has been set to 1, remove caret and set n to 0
               setSentence(`${idText} ${nextDir} %`);
-              n = 0;
+              n.current = 0;
             }
           }, time);
+
+          innerInterval.current = blinkInterval;
 
           count++; // count new line
           console.log('3', alreadyTyped, 'already before')
@@ -75,16 +77,20 @@ function typer() {
       console.log(e);
     }
   };
-}
-let doit = typer();
+});
+const doit = typer();
 
 useEffect(() => { // componentDidMount run typer with these args
   doit("cd portfolio", "🍕 $visitor ", "_ ", "~", "portfolio", 500);
+
+  return () => {
+    clearInterval(innerInterval.current);
+    clearInterval(typer);
+  }
 }, []);
 
-function lsPortfolio() { // on button click animate/print cat and menu
-  return (() => {
-    clearInterval(innerInterval);
+const lsPortfolio = useCallback(() => {
+  clearInterval(innerInterval.current);
     clearInterval(typer);
     doit(
       "cat links.txt",
@@ -95,14 +101,14 @@ function lsPortfolio() { // on button click animate/print cat and menu
       500,
       true
     );
-  })();
-}
+
+}, [doit, innerInterval]);
 
   return (
     <div className={styles.terminalOuterContainer}>
       <div  className={styles.terminalContainer}>
         <div id="rectangle"></div>
-      <div id="already">{prevLines.length === 0 ? " " : prevLines.map((line, i) => ( line === "menu" ? <Menu /> :
+      <div id="already">{prevLines.length === 0 ? " " : prevLines.map((line, i) => ( line === "menu" ? <Menu key={`typed + ${i}`}/> :
         <div className="typed" key={`typed + ${i}`}>{line}</div>
       ))}</div>
       <p id="demo"><span id="sentence">{sentence}</span><span id="caret">&nbsp;</span></p>
