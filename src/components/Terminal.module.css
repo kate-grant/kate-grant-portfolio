@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+.terminalOuterContainer {
+  outline: 1px solid #dd1e74;
+  display: contents;
+  padding: 8px;
+  height: 30vh;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.terminalContainer {
+  height: 90%;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.5rem;
+  color: #dd1e74;
+  overflow-y: auto;
+}
+
+.terminalContainer::-webkit-scrollbar {
+  border-radius: 15px;
+  width: 8px;
+}
+
+.terminalContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #dd1e74;
+}
+
+.terminalContainer::-webkit-scrollbar-thumb {
+  background-color: #dd1e74;
+  outline: 1px solid #dd1e74;
+  border-radius: 15px;
+}
+
+a {
+  margin-left: 40px;
+  color: inherit !important ;
+}
+
+a:hover {
+  color: inherit !important ;
+}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import DeskTopLayout from "../components/desktopLayout";
+import DeskTopLayout from "../components/DesktopLayout";
 
 const IndexPage = () => {
   return (
