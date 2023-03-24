@@ -4,7 +4,7 @@
 
 
 * {
-  background-color: #612424;
+  background-color: #772929;
   padding-left: 5px;
 }
 
@@ -26,18 +26,18 @@
   letter-spacing: 2px;
   /* -webkit-text-stroke:0.5px #dd1e74; */
   /* -webkit-text-fill-color:transparent; */
-  color:#dd1e74;
+  color:#ff006a;
 }
 
 .h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  color: #dd1e74;
+  color: #ff006a;
 }
 
 .vertical {
-  border-left: 6px solid #dd1e74;
+  border-left: 6px solid #ff006a;
   height: 80%;
   position: absolute;
   left: 50%;
