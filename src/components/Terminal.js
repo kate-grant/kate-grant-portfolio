@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState, useEffect, useRef, useCallback } from 'react';
-import Menu from "./Menu";
-import * as styles from "./terminal.module.css";
+import Menu from "../components/Menu";
+import * as styles from "../components/Terminal.module.css";
 
 
 const Terminal = () => {

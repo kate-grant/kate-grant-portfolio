@@ -1,7 +1,7 @@
 import * as React from "react";
-import MorphContainer from "./MorphContainer";
-import Terminal from "./Terminal";
-import * as styles from "./DesktopLayout.module.css";
+import MorphContainer from "../components/MorphContainer";
+import Terminal from "../components/Terminal";
+import * as styles from "../components/DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
 
