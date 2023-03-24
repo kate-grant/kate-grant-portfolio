@@ -17,6 +17,7 @@ const DeskTopLayout = () => {
       <div className={styles.morph}>
         <MorphContainer className={styles.morph}>
         </MorphContainer>
+        <h3 className={styles.h3}>BLOG</h3>
       </div>
     </main>
   )

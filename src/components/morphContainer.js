@@ -1,11 +1,15 @@
-import * as React from "react";
+import React from 'react';
+import Blog from "./Blog";
 
-const MorphContainer = ({children}) => {
-  return (
-    <div>{children}</div>
+const MorphContainer = (prop) => {
 
-    //use prop conditionally to return menu-based morph
-  )
+  switch (prop) {
+    default :
+    return (
+      <Blog />
+    )
+
+  }
 }
 
 export default MorphContainer;

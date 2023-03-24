@@ -107,7 +107,7 @@ const lsPortfolio = useCallback(() => {
   return (
     <div className={styles.terminalOuterContainer}>
       <div  className={styles.terminalContainer}>
-        <div id="rectangle"></div>
+      <div id="rectangle"></div>
       <div id="already">{prevLines.length === 0 ? " " : prevLines.map((line, i) => ( line === "menu" ? <Menu key={`typed + ${i}`}/> :
         <div className="typed" key={`typed + ${i}`}>{line}</div>
       ))}</div>

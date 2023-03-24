@@ -36,6 +36,20 @@
   color: #dd1e74;
 }
 
+.h3 {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 0px;
+  color:#dd1e74;
+}
+
 .vertical {
   border-left: 6px solid #dd1e74;
   height: 80%;
