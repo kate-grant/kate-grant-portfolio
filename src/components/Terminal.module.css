@@ -2,7 +2,6 @@
 
 .terminalOuterContainer {
   outline: 1px solid #dd1e74;
-  display: contents;
   padding: 8px;
   height: 30vh;
   border-radius: 15px;
