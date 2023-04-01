@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 .terminalOuterContainer {
+  position: fixed;
+  display: block;
+  bottom: 20px;
+  width: 90vw;
   outline: 1px solid #ff006a;
   padding: 8px;
-  height: 30vh;
+  height: 12vh;
   border-radius: 15px;
   overflow: hidden;
+  z-index: 5;
+  backdrop-filter: blur(10px);
 }
 
 .terminalContainer {
   height: 90%;
   font-family: 'Cutive Mono', monospace;
-  font-size: 1.5rem;
+  font-size: 1.05rem;
   color: #ff006a;
   overflow-y: auto;
 }
