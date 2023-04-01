@@ -22,7 +22,11 @@
     "gatsby-plugin-sitemap": "^6.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
+    "p5": "^1.6.0",
+    "paper": "^0.12.17",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.3",
+    "react-p5-wrapper": "^4.1.1"
   }
 }
