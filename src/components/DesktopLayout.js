@@ -3,6 +3,7 @@ import { useState, useRef, useEffect} from "react";
 import { useInView } from 'react-intersection-observer';
 import MorphContainer from "../components/MorphContainer";
 import Terminal from "../components/Terminal";
+import AnimatedSVGs from "./AnimatedSVGs";
 import * as styles from "../components/DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
@@ -16,6 +17,21 @@ const DeskTopLayout = () => {
     rootMargin: "30%",
   });
 
+  const svgData = [
+    { url: 'static/Flwr_Lilac.svg', x: -200, y: 40, targetX: -10, targetY: 50, rotate: 940 },
+    { url: 'static/React_OJ.svg', x: -150, y: 0, targetX: -5, targetY: 500, rotate: -8 },
+    { url: 'static/diamond-fade.svg', x: -600, y: -20, targetX: -500, targetY: 1000, rotate: 540 },
+    { url: 'static/TypeScript_Berry.svg', x: -150, y: 0, targetX: -50, targetY: 40, rotate: -30 },
+    { url: 'static/diamond-fade.svg', x: 30, y: 0, targetX: -300, targetY: 60, rotate: 560 },
+    // { url: 'static/Flwr_Lilac.svg', x: 200, y: 50, targetX: 400, targetY: 50, rotate: 860 },
+    { url: 'static/Redux_OJ.svg', x: 70, y: 80, targetX: 65, targetY: 0, rotate: 25 },
+    { url: 'static/Flwr_Lilac.svg', x: 200, y: 50, targetX: 400, targetY: 50, rotate: 860 },
+    { url: 'static/OCaml_Berry.svg', x: 10, y: 150, targetX: -20, targetY: 40, rotate: 35 },
+    { url: 'static/diamond-fade.svg', x: 100, y: 0, targetX: 300, targetY: 200, rotate: 270 },
+    { url: 'static/diamond-fade.svg', x: 30, y: 0, targetX: -30, targetY: 10, rotate: 540 },
+  ];
+
+
   return (
     <body>
 
@@ -24,9 +40,8 @@ const DeskTopLayout = () => {
         <Terminal />
         <section>
           <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based fullstack software engineer with a love of functional programming.</h2>
-          <div className={styles.morph}>
-            <MorphContainer className={styles.morph}>
-            </MorphContainer>
+          <div className={styles.animationContainer}>
+            <AnimatedSVGs svgData={svgData} />
           </div>
         </section>
         <section className="skills" >

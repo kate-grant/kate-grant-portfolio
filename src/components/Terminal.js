@@ -9,6 +9,7 @@ const Terminal = () => {
   let [prevLines, setPrevLines] = useState([]);
   let [alreadyTyped, setAlreadyTyped] = useState([]);
   let [sentence, setSentence] = useState("");
+  let [firstLoop, setFirstLoop] = useState(true);
   const n = useRef(0);
   const innerInterval = useRef(null);
 
@@ -85,6 +86,9 @@ useEffect(() => { // componentDidMount run typer with these args
   return () => {
     clearInterval(innerInterval.current);
     clearInterval(typer);
+    if (!firstLoop) {
+      setFirstLoop(true);
+    }
   }
 }, []);
 
@@ -101,7 +105,7 @@ const lsPortfolio = useCallback(() => {
       true
     );
 
-}, [doit, innerInterval]);
+}, [doit, innerInterval, setFirstLoop]);
 
   return (
     <div className={styles.terminalOuterContainer}>
