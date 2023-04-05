@@ -86,15 +86,17 @@ useEffect(() => { // componentDidMount run typer with these args
   return () => {
     clearInterval(innerInterval.current);
     clearInterval(typer);
-    if (!firstLoop) {
-      setFirstLoop(true);
-    }
   }
 }, []);
 
+let menuInterval = useRef(null);
+
 const lsPortfolio = useCallback(() => {
+  console.log('callback');
   clearInterval(innerInterval.current);
     clearInterval(typer);
+
+    if (firstLoop) {
     doit(
       "cat links.txt",
       "$visitor ",
@@ -104,8 +106,26 @@ const lsPortfolio = useCallback(() => {
       500,
       true
     );
+    }
 
-}, [doit, innerInterval, setFirstLoop]);
+        clearInterval(menuInterval.current);
+
+}, [doit, innerInterval]);
+
+
+
+useEffect(()=>{
+  console.log('smol effect');
+  if(firstLoop){
+    menuInterval.current = setInterval(function () {
+      lsPortfolio()
+    }, 3000);
+  }
+  setFirstLoop(false);
+  return () => {
+    setFirstLoop(false);
+  }
+}, [])
 
   return (
     <div className={styles.terminalOuterContainer}>
@@ -115,7 +135,7 @@ const lsPortfolio = useCallback(() => {
         <div className="typed" key={`typed + ${i}`}>{line}</div>
       ))}</div>
       <p id="demo"><span id="sentence">{sentence}</span><span id="caret">&nbsp;</span></p>
-      <button id="myBtn" onClick={lsPortfolio}>mybutn</button>
+      {/* <button id="myBtn" onClick={lsPortfolio}>mybutn</button> */}
       </div>
     </div>
   )
