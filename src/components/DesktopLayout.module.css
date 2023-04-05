@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #772929;
+  background-color: #632020;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   display: block;
@@ -53,6 +53,12 @@ h3 {
   color: #ff006a;
   width: 60vw;
 }
+.wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #e0a1a1;
+  /* color: #e0a1a1; */
+}
 
 .vertical {
   border-left: 6px solid #ff006a;
@@ -73,6 +79,11 @@ h3 {
 .fadeIn {
   opacity: 0;
   transform: translate(0, 20px); transition: all 3s;
+}
+
+.fadeInLeft {
+  opacity: 0;
+  transform: translate(45px, 0); transition: all 3s;
 }
 
 .visible {
@@ -96,4 +107,7 @@ svg {
   /* transform: scale(0.8); */
   max-width: 10vw;
   overflow: visible;
+  opacity: 92%;
+  mix-blend-mode: luminosity;
 }
+
