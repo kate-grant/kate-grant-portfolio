@@ -21,14 +21,35 @@ body {
   align-self: center;
 }
 
+.stickyBar {
+  position: fixed;
+  display: block;
+  top: 10px;
+  left: 0px;
+  width: fit-content;
+  height: 5rem;
+  padding-bottom: 3vw;
+  padding-right: 3vw;
+  margin-bottom: 20vh;
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+  z-index: 100;
+}
+
+.about {
+  position: absolute;
+  top: 20vh;
+  z-index: 3
+}
+
 .left {
   width: 45vw;
   float: left;
 }
 
 .h1 {
-  position: sticky;
   margin-top: 10px;
+  margin-left: 30px;
   /* font-family: 'Noto Sans', sans-serif; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
@@ -70,6 +91,7 @@ h3 {
 }
 
 .animationContainer {
+  padding-top: 60vh;
   top: -30vh;
   height: 100vh;
   width: 100vw;
@@ -102,9 +124,6 @@ ul {
 }
 
 svg {
-  /* width: 100%;
-  height: 100%; */
-  /* transform: scale(0.8); */
   max-width: 10vw;
   overflow: visible;
   opacity: 92%;

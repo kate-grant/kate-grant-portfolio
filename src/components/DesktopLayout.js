@@ -50,10 +50,14 @@ const DeskTopLayout = () => {
     <body>
 
     <main className={styles.main}>
+      <div className={styles.stickyBar}>
         <h1 className={styles.h1}>KATE GRANT</h1>
+      </div>
         <Terminal />
         <section>
+          <div className={styles.about}>
           <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
+          </div>
           <div className={styles.animationContainer}>
             <AnimatedSVGs svgData={svgData} />
           </div>
