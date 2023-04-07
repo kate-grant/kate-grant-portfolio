@@ -8,10 +8,9 @@
   outline: 1px solid #ff006a;
   padding: 8px;
   height: 12vh;
-  /* border-radius: 15px; */
   overflow: hidden;
   z-index: 5;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
 }
 
 .terminalContainer {
