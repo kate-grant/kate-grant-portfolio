@@ -3,7 +3,10 @@ import { useState, useRef, useEffect} from "react";
 import { useInView } from 'react-intersection-observer';
 import MorphContainer from "../components/MorphContainer";
 import Terminal from "../components/Terminal";
-import AnimatedSVGs from "./AnimatedSVGs";
+import AnimatedSVGs from "../components/AnimatedSVGs";
+import WorkText from "../components/WorkText";
+import MobileText from "../components/MobileText";
+import OpenSourceText from "../components/OpenSourceText";
 import * as styles from "../components/DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
@@ -19,17 +22,27 @@ const DeskTopLayout = () => {
 
   const { ref: webRef, inView: webInView} = useInView({
     threshold: 1,
-    rootMargin: "50%",
+    rootMargin: "40%",
   });
 
   const { ref: mobileRef, inView: mobileInView} = useInView({
     threshold: 1,
-    rootMargin: "50%",
+    rootMargin: "40%",
   });
 
   const { ref: openSourceRef, inView: openSourceInView} = useInView({
     threshold: 1,
+    rootMargin: "40%",
+  });
+
+  const { ref: blogRef, inView: blogInView} = useInView({
+    threshold: 1,
     rootMargin: "50%",
+  });
+
+  const { ref: contactRef, inView: contactInView} = useInView({
+    threshold: 1,
+    rootMargin: "30%",
   });
 
   const svgData = [
@@ -63,26 +76,31 @@ const DeskTopLayout = () => {
         </section>
         <section className="work">
           <div>
-            {/* <h3>For the Web</h3> */}
-            <div id="project-type-container-left">
-
-            </div>
-            <div id="project-item-container-right">
+            <div id="project-item">
+              <WorkText/>
               <ul ref={webRef} className={`${styles.fadeInLeft} ${webInView ? styles.visible : ""}`}>
                 <li>Kate Grant - Portfolio</li>
+                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
                 <li>StarChart 3D</li>
+                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
                 <li>Trippn</li>
+                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
                 <li>AllMatcha</li>
+                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
               </ul>
-              {/* <h3>For Mobile</h3> */}
+              <MobileText />
               <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
                 <li>Color Closet</li>
+                <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
               </ul>
-              {/* <h3>Open Source Contributions</h3> */}
+              <OpenSourceText />
               <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
                 <li>Three.js</li>
+                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
                 <li>P5.js</li>
+                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
                 <li>Tablecloth</li>
+                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
               </ul>
             </div>
           </div>
@@ -90,6 +108,27 @@ const DeskTopLayout = () => {
         <section className="play">
         </section>
         <section className="blog">
+          <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
+          <ul>
+                <li>Stuff: A Stuff Blog Post for Beginner Coders</li>
+                <li>More Stuff Blog Post Part II</li>
+                <li>Blog Post</li>
+                <li>Blog Post</li>
+                <li>Blog Post</li>
+                <li>Blog Post</li>
+              </ul>
+        </section>
+        <section>
+          <div>
+            <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
+          </div>
+          <div>
+              <h3>Say hi!</h3>
+          </div>
+        </section>
+        <section>
+          <h2>footer stuff</h2>
+          <h3>footer stuff stuff</h3>
         </section>
     </main>
     </body>

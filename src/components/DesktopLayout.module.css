@@ -37,13 +37,25 @@ body {
   color:#ff006a;
 }
 
-.h2{
+.h2 {
   /* font-family: 'Noto Sans', sans-serif; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   font-size: 5vw;
   color: #ff006a;
   width: 60vw;
+}
+
+.h2Decorated {
+  /* position: absolute; */
+  /* right: 5vw; */
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  font-size: 9rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  color: #e0a1a1;
+  /* transform: translate(45, 0), rotate(-12deg); */
 }
 
 h3 {
@@ -76,6 +88,13 @@ h3 {
   z-index: -1;
 }
 
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ff006a;
+  border: none;
+}
+
 .fadeIn {
   opacity: 0;
   transform: translate(0, 20px); transition: all 3s;
@@ -84,6 +103,11 @@ h3 {
 .fadeInLeft {
   opacity: 0;
   transform: translate(45px, 0); transition: all 3s;
+}
+
+.fadeInRight {
+  opacity: 0;
+  transform: translate(-45px, 0); transition: all 3s;
 }
 
 .visible {
@@ -99,6 +123,7 @@ ul {
   color: #ff006a;
   width: 60vw;
   list-style-type: none;
+  margin-top: 20vh;
 }
 
 svg {
