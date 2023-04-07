@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState, useRef, useEffect} from "react";
 import { useInView } from 'react-intersection-observer';
-import MorphContainer from "../components/MorphContainer";
 import Terminal from "../components/Terminal";
 import AnimatedSVGs from "../components/AnimatedSVGs";
 import WorkText from "../components/WorkText";
@@ -110,13 +109,13 @@ const DeskTopLayout = () => {
         <section className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
-                <li>Stuff: A Stuff Blog Post for Beginner Coders</li>
-                <li>More Stuff Blog Post Part II</li>
-                <li>Blog Post</li>
-                <li>Blog Post</li>
-                <li>Blog Post</li>
-                <li>Blog Post</li>
-              </ul>
+            <li>Stuff: A Stuff Blog Post for Beginner Coders</li>
+            <li>More Stuff Blog Post Part II</li>
+            <li>Blog Post</li>
+            <li>Blog Post</li>
+            <li>Blog Post</li>
+            <li>Blog Post</li>
+          </ul>
         </section>
         <section>
           <div>
