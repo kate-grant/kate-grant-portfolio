@@ -109,8 +109,8 @@ const DeskTopLayout = () => {
         <section className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
-            <li>Stuff: A Stuff Blog Post for Beginner Coders</li>
-            <li>More Stuff Blog Post Part II</li>
+            <li>Functional Programming: An Introduction for Beginner Programmers</li>
+            <li>React 18 in 2023: A Low-Down on New Documentation and Design Patterns</li>
             <li>Blog Post</li>
             <li>Blog Post</li>
             <li>Blog Post</li>
