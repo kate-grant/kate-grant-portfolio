@@ -44,6 +44,16 @@ const DeskTopLayout = () => {
     rootMargin: "30%",
   });
 
+  const { ref: contactOptionsRef, inView: contactCoptionsInView} = useInView({
+    threshold: 1,
+    rootMargin: "30%",
+  });
+
+  const { ref: helloRef, inView: helloInView} = useInView({
+    threshold: 1,
+    rootMargin: "40%",
+  });
+
   const svgData = [
     { url: 'static/Flwr_Lilac.svg', x: -200, y: 40, targetX: -10, targetY: 50, rotate: 940 },
     { url: 'static/React_Honey.svg', x: -150, y: 0, targetX: -5, targetY: 500, rotate: -8 },
@@ -117,17 +127,17 @@ const DeskTopLayout = () => {
             <li>Blog Post</li>
           </ul>
         </section>
-        <section id="contact">
+        <section id="contact" className={styles.contact}>
           <div>
             <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
           </div>
+          <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.wavy} ${styles.fadeIn} ${helloInView ? styles.visible : ""}`}><h4><a href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a>Email</a></h4><h4><a href='https://github.com/kate-grant'>Github</a></h4></div>
           <div>
-              <h3>Say hi!</h3>
+              <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
           </div>
-        </section>
-        <section>
-          <h2>footer stuff</h2>
-          <h3>footer stuff stuff</h3>
+          <h4>Kate Grant © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
         </section>
     </main>
     </body>
