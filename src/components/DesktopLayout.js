@@ -59,7 +59,7 @@ const DeskTopLayout = () => {
 
 
   return (
-    <body>
+    <body className={styles.body}>
 
     <main className={styles.main}>
         <h1 className={styles.h1}>KATE GRANT</h1>
@@ -71,7 +71,7 @@ const DeskTopLayout = () => {
           </div>
         </section>
         <section className="skills" >
-          <h3 ref={githubRef} className={`${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={styles.wavy}>Github</span>.</h3>
+          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={styles.wavy}>Github</span>.</h3>
         </section>
         <section className="work">
           <div>
@@ -109,8 +109,8 @@ const DeskTopLayout = () => {
         <section className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
-            <li>Stuff: A Stuff Blog Post for Beginner Coders</li>
-            <li>More Stuff Blog Post Part II</li>
+            <li>Functional Programming: An Introduction for Beginner Programmers</li>
+            <li>React 18 in 2023: A Low-Down on New Documentation and Design Patterns</li>
             <li>Blog Post</li>
             <li>Blog Post</li>
             <li>Blog Post</li>

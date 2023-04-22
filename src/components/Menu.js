@@ -4,7 +4,7 @@ import * as styles from "../components/Menu.module.css"
 const Menu = () => {
   return (
     <div className={styles.menu}>
-      <a href=''>About</a><a href=''>GitHub</a><a href=''>Work</a><a href=''>Play</a><a href=''>Blog</a><a href=''>Contact</a>
+      <a className={styles.menuLink} href=''>About</a><a className={styles.menuLink} href=''>GitHub</a><a className={styles.menuLink} href=''>Work</a><a className={styles.menuLink} href=''>Play</a><a className={styles.menuLink} href=''>Blog</a><a className={styles.menuLink} href=''>Contact</a>
     </div>
   )
 }
