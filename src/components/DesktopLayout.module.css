@@ -75,6 +75,12 @@ html {
   /* color: #e0a1a1; */
 }
 
+.wavy a {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #e0a1a1;
+}
+
 .vertical {
   border-left: 6px solid #ff006a;
   height: 80%;
