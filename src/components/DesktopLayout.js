@@ -62,7 +62,7 @@ const DeskTopLayout = () => {
     <body className={styles.body}>
 
     <main className={styles.main}>
-        <h1 className={styles.h1}>KATE GRANT</h1>
+        <h1 id="about" className={styles.h1}>KATE GRANT</h1>
         <Terminal />
         <section>
           <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
@@ -71,9 +71,9 @@ const DeskTopLayout = () => {
           </div>
         </section>
         <section className="skills" >
-          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={styles.wavy}>Github</span>.</h3>
+          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={styles.wavy}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
         </section>
-        <section className="work">
+        <section id="work" className="work">
           <div>
             <div id="project-item">
               <WorkText/>
@@ -104,9 +104,9 @@ const DeskTopLayout = () => {
             </div>
           </div>
         </section>
-        <section className="play">
+        <section id="play" className="play">
         </section>
-        <section className="blog">
+        <section id="blog" className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
             <li>Functional Programming: An Introduction for Beginner Programmers</li>
@@ -117,7 +117,7 @@ const DeskTopLayout = () => {
             <li>Blog Post</li>
           </ul>
         </section>
-        <section>
+        <section id="contact">
           <div>
             <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
           </div>
