@@ -131,7 +131,7 @@ const DeskTopLayout = () => {
           <div>
             <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
           </div>
-          <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.wavy} ${styles.fadeIn} ${helloInView ? styles.visible : ""}`}><h4><a href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a>Email</a></h4><h4><a href='https://github.com/kate-grant'>Github</a></h4></div>
+          <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${helloInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={styles.wavy} >Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
           <div>
               <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
           </div>

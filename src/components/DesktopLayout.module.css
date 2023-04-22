@@ -174,3 +174,7 @@ svg {
   justify-self: center;
 }
 
+.contactOptions a {
+  font-size: 1.7rem;
+}
+
