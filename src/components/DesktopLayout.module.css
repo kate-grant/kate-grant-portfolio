@@ -81,6 +81,10 @@ html {
   text-decoration-color: #e0a1a1;
 }
 
+.githubLink:hover {
+  color:#e0a1a1
+}
+
 .vertical {
   border-left: 6px solid #ff006a;
   height: 80%;
@@ -149,6 +153,23 @@ svg {
   opacity: 92%;
   mix-blend-mode: luminosity;
 }
+
+.moreContainer {
+  display: block;
+  width: 55vw;
+  padding-bottom: 6rem;
+}
+
+.seeMoreBlog {
+  font-size: 4rem;
+  color: #ff006a !important;
+  float: right;
+}
+
+.seeMoreBlog:hover {
+  color: #e0a1a1 !important;
+}
+
 
 .contact {
   height: 100vh;
