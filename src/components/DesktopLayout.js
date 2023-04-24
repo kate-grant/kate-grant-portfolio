@@ -137,7 +137,7 @@ const DeskTopLayout = () => {
         </section>
         <section id="contact" className={styles.contact}>
           <div>
-            <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactOptionsInView ? styles.visible : ""}`}>CONTACT</h2>
+            <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
           </div>
           <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${contactOptionsInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={`${styles.wavy} ${styles.email}`} onClick={handleOpen}>Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
           <Modal
