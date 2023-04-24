@@ -86,7 +86,6 @@ useEffect(() => { // componentDidMount run typer with these args
 let menuInterval = useRef(null);
 
 const lsPortfolio = useCallback(() => {
-  console.log('callback');
   clearInterval(innerInterval.current);
     clearInterval(typer);
 
@@ -109,7 +108,6 @@ const lsPortfolio = useCallback(() => {
 
 
 useEffect(()=>{
-  console.log('smol effect');
   if(firstLoop){
     menuInterval.current = setInterval(function () {
       lsPortfolio()

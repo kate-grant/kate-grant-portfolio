@@ -19,15 +19,13 @@ const AnimatedSVGs = ({ svgData }) => {
     const svgElements = container.selectAll("svg");
     const windowHeight = window.innerHeight;
 
-    console.log('window', windowHeight);
 
     svgElements.each(function (d) {
       const svgElement = d3.select(this);
-      console.log('in animate forEach, element: ', d);
+
       // Apply position changes and tweening animations to the SVGs
       // using d3.transition() and d3.ease functions
-      console.log('DDDDDD', d, d.targetX);
-      console.log('thhhis', this);
+
       svgElement
         .transition()
         .duration(5000)
@@ -57,7 +55,7 @@ const AnimatedSVGs = ({ svgData }) => {
         if (collision) {
           // Handle collision between SVG elements
           // ...
-          console.log('collision w/ SVG');
+
         }
       });
 
@@ -73,7 +71,7 @@ const AnimatedSVGs = ({ svgData }) => {
       if (collisionTop || collisionBottom || collisionLeft || collisionRight) {
         // Handle collision with viewport bounds
         // ...
-        console.log('collision w/ viewport bounds');
+
       }
     });
   };
@@ -87,7 +85,7 @@ const AnimatedSVGs = ({ svgData }) => {
       .data(svgData)
       .enter()
       .append("svg");
-      console.log("SVG GROUP", svgGroup);
+
 
     svgGroup.each(async function(d) {
       const response = await fetch(d.url);

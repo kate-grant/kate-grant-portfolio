@@ -6,6 +6,7 @@ import AnimatedSVGs from "../components/AnimatedSVGs";
 import WorkText from "../components/WorkText";
 import MobileText from "../components/MobileText";
 import OpenSourceText from "../components/OpenSourceText";
+import ContactForm from "../components/ContactForm";
 import * as styles from "../components/DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
@@ -135,6 +136,7 @@ const DeskTopLayout = () => {
           <div>
               <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
           </div>
+          <ContactForm/>
           <h4>Kate Grant © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
