@@ -132,7 +132,7 @@ const DeskTopLayout = () => {
         <section id="blog" className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
-            <li>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</li>
+            <li><Link to='/new-react-documentation-2023/'>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</Link></li>
           </ul>
           <div className={styles.moreContainer}>
             <Link className={`${styles.seeMoreBlog} ${styles.wavy}`} to='/blog'>See more →</Link>
