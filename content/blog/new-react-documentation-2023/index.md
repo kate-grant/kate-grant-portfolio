@@ -1,5 +1,5 @@
 ---
-title: "New React Documentation: An Overview (2023)"
+title: "New React Documentation: An Overview of New Documentation and Design Patterns (2023)"
 date: "2023-04-07"
 description: "Learn about changes to the React 18 documentation and new education features."
 ---
