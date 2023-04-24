@@ -178,3 +178,17 @@ svg {
   font-size: 1.7rem;
 }
 
+.email:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display:grid;
+  background-color: #ff006a;
+  color: #e0a1a1;
+}
+
+.modal label {
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+}
