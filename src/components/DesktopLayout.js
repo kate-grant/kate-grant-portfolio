@@ -6,9 +6,21 @@ import AnimatedSVGs from "../components/AnimatedSVGs";
 import WorkText from "../components/WorkText";
 import MobileText from "../components/MobileText";
 import OpenSourceText from "../components/OpenSourceText";
+import ContactForm from "../components/ContactForm";
+import { Modal } from "@mui/material";
 import * as styles from "../components/DesktopLayout.module.css";
 
 const DeskTopLayout = () => {
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  }
+
+  const handleClose = () => {
+    setOpen(false);
+  }
 
   const { ref: heroRef, inView: heroInView} = useInView({
     threshold: 1,
@@ -42,6 +54,16 @@ const DeskTopLayout = () => {
   const { ref: contactRef, inView: contactInView} = useInView({
     threshold: 1,
     rootMargin: "30%",
+  });
+
+  const { ref: contactOptionsRef, inView: contactCoptionsInView} = useInView({
+    threshold: 1,
+    rootMargin: "30%",
+  });
+
+  const { ref: helloRef, inView: helloInView} = useInView({
+    threshold: 1,
+    rootMargin: "40%",
   });
 
   const svgData = [
@@ -111,23 +133,29 @@ const DeskTopLayout = () => {
           <ul>
             <li>Functional Programming: An Introduction for Beginner Programmers</li>
             <li>React 18 in 2023: A Low-Down on New Documentation and Design Patterns</li>
-            <li>Blog Post</li>
-            <li>Blog Post</li>
-            <li>Blog Post</li>
-            <li>Blog Post</li>
           </ul>
         </section>
-        <section id="contact">
+        <section id="contact" className={styles.contact}>
           <div>
             <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
           </div>
+          <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${helloInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={`${styles.wavy} ${styles.email}`} onClick={handleOpen}>Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
+          <Modal
+          className={styles.modal}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-contact-form"
+          aria-describedby="modal-email-contact">
+            <>
+              <ContactForm/>
+            </>
+          </Modal>
           <div>
-              <h3>Say hi!</h3>
+              <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
           </div>
-        </section>
-        <section>
-          <h2>footer stuff</h2>
-          <h3>footer stuff stuff</h3>
+          <h4>Kate Grant © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
         </section>
     </main>
     </body>
