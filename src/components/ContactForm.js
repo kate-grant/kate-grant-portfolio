@@ -9,7 +9,7 @@ const ErrorMessage = ({ message, show }) => {
   return <></>;
 }
 
-const ContactForm = () => {
+const ContactForm = ({close}) => {
 
   const functionURL = "https://mahogany-prawn-3933.twil.io/send-email"
 
@@ -79,7 +79,9 @@ const ContactForm = () => {
  }
    return (
      <>
-       <div>{error}</div>
+     <div>
+      <button className={styles.close} onClick={close} alt="close">x</button>
+     </div>
        <form
          style={{
            display: `flex`,

@@ -150,7 +150,7 @@ const DeskTopLayout = () => {
           aria-labelledby="modal-contact-form"
           aria-describedby="modal-email-contact">
             <>
-              <ContactForm/>
+              <ContactForm close={handleClose}/>
             </>
           </Modal>
           <div>
