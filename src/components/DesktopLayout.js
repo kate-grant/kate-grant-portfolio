@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, useRef, useEffect} from "react";
+import {Link} from "gatsby";
 import { useInView } from 'react-intersection-observer';
 import Terminal from "../components/Terminal";
 import AnimatedSVGs from "../components/AnimatedSVGs";
@@ -93,7 +94,7 @@ const DeskTopLayout = () => {
           </div>
         </section>
         <section className="skills" >
-          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={styles.wavy}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
+          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={`${styles.wavy} ${styles.githubLink}`}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
         </section>
         <section id="work" className="work">
           <div>
@@ -131,9 +132,11 @@ const DeskTopLayout = () => {
         <section id="blog" className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
           <ul>
-            <li>Functional Programming: An Introduction for Beginner Programmers</li>
-            <li>React 18 in 2023: A Low-Down on New Documentation and Design Patterns</li>
+            <li>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</li>
           </ul>
+          <div className={styles.moreContainer}>
+            <Link className={`${styles.seeMoreBlog} ${styles.wavy}`} to='/blog'>See more →</Link>
+          </div>
         </section>
         <section id="contact" className={styles.contact}>
           <div>
