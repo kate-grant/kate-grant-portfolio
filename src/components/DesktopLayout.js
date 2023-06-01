@@ -47,6 +47,11 @@ const DeskTopLayout = () => {
     rootMargin: "40%",
   });
 
+  const { ref: playRef, inView: playInView} = useInView({
+    threshold: 1,
+    rootMargin: "40%",
+  });
+
   const { ref: blogRef, inView: blogInView} = useInView({
     threshold: 1,
     rootMargin: "50%",
@@ -127,7 +132,20 @@ const DeskTopLayout = () => {
             </div>
           </div>
         </section>
-        <section id="play" className="play">
+        <section id="play" className={styles.play}>
+          <h3>Creative Technology</h3>
+          {/* <h4><a href="https://youareami.onrender.com/" target="blank">AreYouAmI</a></h4>
+          <p>A multi-player synthesizer and creative work exploring shared space.</p>
+          <h5>Vanilla JavaScript / Google Firebase / Hugging Face ML / Webpack / Node.js / Web Audio</h5>
+          <h4><a href="https://youareami.onrender.com/" target="blank">The Musical Web Showcase</a></h4>
+          <p>A showcase of creative works made by students in the SFPC The Musical Web course. I participated in this course as a student.</p>
+          <h5>Vanilla JavaScript / HTML / CSS</h5> */}
+          <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
+            <li>YouAreAmI</li>
+            <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
+            <li>The Musical Web Showcase</li>
+            <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
+          </ul>
         </section>
         <section id="blog" className="blog">
           <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
@@ -139,9 +157,9 @@ const DeskTopLayout = () => {
           </div>
         </section>
         <section id="contact" className={styles.contact}>
-          <div>
+          {/* <div>
             <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
-          </div>
+          </div> */}
           <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${contactOptionsInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={`${styles.wavy} ${styles.email}`} onClick={handleOpen}>Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
           <Modal
           className={styles.modal}
