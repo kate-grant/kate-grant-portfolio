@@ -134,12 +134,6 @@ const DeskTopLayout = () => {
         </section>
         <section id="play" className={styles.play}>
           <h3>Creative Technology</h3>
-          {/* <h4><a href="https://youareami.onrender.com/" target="blank">AreYouAmI</a></h4>
-          <p>A multi-player synthesizer and creative work exploring shared space.</p>
-          <h5>Vanilla JavaScript / Google Firebase / Hugging Face ML / Webpack / Node.js / Web Audio</h5>
-          <h4><a href="https://youareami.onrender.com/" target="blank">The Musical Web Showcase</a></h4>
-          <p>A showcase of creative works made by students in the SFPC The Musical Web course. I participated in this course as a student.</p>
-          <h5>Vanilla JavaScript / HTML / CSS</h5> */}
           <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
             <li><a href="https://youareami.onrender.com/" target="blank">YouAreAmI</a></li>
             <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
