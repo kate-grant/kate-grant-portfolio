@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: "/kate-grant-portfolio",
   siteMetadata: {
     title: `Kate Grant - Software Engineer`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.kate-grant.com`,
     author: {
       name: `Kate Grant`,
       summary: `Kate Grant is a Brooklyn-based fullstack software engineer with a love for functional programming.`
@@ -17,7 +17,7 @@ module.exports = {
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/kate-grant-favicon-512.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
