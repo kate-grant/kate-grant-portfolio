@@ -3,4 +3,4 @@
 </h1>
 
 A portfolio website and blog made with React, Gatsby and GraphQL.
-[Visit Kate Grant - Portfolio](https://kate-grant.github.io)
+[Visit Kate Grant - Portfolio](https://kate-grant-portfolio.onrender.com)
