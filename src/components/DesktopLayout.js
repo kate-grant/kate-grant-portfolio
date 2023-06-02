@@ -106,18 +106,18 @@ const DeskTopLayout = () => {
             <div id="project-item">
               <WorkText/>
               <ul ref={webRef} className={`${styles.fadeInLeft} ${webInView ? styles.visible : ""}`}>
-                <li>Kate Grant - Portfolio</li>
+                <li><a href="https://github.com/kate-grant/kate-grant-portfolio" target="blank">Kate Grant - Portfolio</a></li>
                 <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li>StarChart 3D</li>
+                <li><a href="https://github.com/kate-grant/StarChart-3D" target="blank">StarChart 3D</a></li>
                 <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li>Trippn</li>
+                <li><a href="https://github.com/team-joan-clarke/trip-app" target="blank">Trippn</a></li>
                 <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li>AllMatcha</li>
+                <li><a href="https://github.com/Matcha-with-Honey/Matcha-Shopper" target="blank">AllMatcha</a></li>
                 <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
               </ul>
               <MobileText />
               <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                <li>Color Closet</li>
+                <li><a href="https://github.com/kate-grant/YellowJacket" target="blank"></a>YellowJacket</li>
                 <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
               </ul>
               <OpenSourceText />
@@ -141,9 +141,9 @@ const DeskTopLayout = () => {
           <p>A showcase of creative works made by students in the SFPC The Musical Web course. I participated in this course as a student.</p>
           <h5>Vanilla JavaScript / HTML / CSS</h5> */}
           <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
-            <li>YouAreAmI</li>
+            <li><a href="https://youareami.onrender.com/" target="blank">YouAreAmI</a></li>
             <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
-            <li>The Musical Web Showcase</li>
+            <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="blank">The Musical Web Showcase</a></li>
             <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
           </ul>
         </section>
