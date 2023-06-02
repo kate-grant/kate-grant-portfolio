@@ -9,6 +9,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 html {
@@ -21,7 +22,6 @@ html {
   background-color: #632020;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
-  margin-right: 0;
 }
 
 .main {
@@ -166,7 +166,7 @@ svg {
 .play {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 100vw;
   background-image: linear-gradient(#e0a1a1 70%, #ff006a);
   align-self: center;
   justify-content: center;
@@ -253,6 +253,7 @@ svg {
 
 .contactOptions a {
   font-size: 1.7rem;
+  padding: 1rem;
 }
 
 .email:hover {
