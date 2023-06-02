@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kate Grant - Software Engineer Blog RSS Feed]]></title><description><![CDATA[Kate Grant - Software Engineer Blog RSS Feed]]></description><link>https://www.yourdomain.tld</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Jun 2023 17:04:05 GMT</lastBuildDate><item><title><![CDATA[New React Documentation: An Overview of New Documentation and Design Patterns (2023)]]></title><description><![CDATA[React.js, the popular JavaScript library for building user interfaces, has recently launched a new website, react.dev, which provides…]]></description><link>https://www.yourdomain.tld/new-react-documentation-2023/</link><guid isPermaLink="false">https://www.yourdomain.tld/new-react-documentation-2023/</guid><pubDate>Fri, 07 Apr 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;React.js, the popular JavaScript library for building user interfaces, has recently launched a new website, &lt;a href=&quot;http://react.dev&quot; title=&quot;react.dev&quot;&gt;react.dev&lt;/a&gt;, which provides updated documentation and resources for the latest version of React. The website has been designed to help developers learn modern React using &lt;a href=&quot;https://react.dev/learn#:~:text=A%20component%20is%20a%20piece%20of%20the%20UI%20(user%20interface)%20that%20has%20its%20own%20logic%20and%20appearance.&quot;&gt;Function components&lt;/a&gt; and &lt;a href=&quot;https://react.dev/learn/thinking-in-react#:~:text=Hooks%20are%20special%20functions%20that%20let%20you%20%E2%80%9CHook%20into%E2%80%9D%20React&quot;&gt;Hooks&lt;/a&gt;, with over 600 interactive examples, diagrams, illustrations, and challenges. (The previous React documentation site has now been archived at &lt;a href=&quot;http://legacy.reactjs.org&quot; title=&quot;legacy.reactjs.org&quot;&gt;legacy.reactjs.org&lt;/a&gt;). The changes are intended to provide a more engaging and effective learning experience for developers.&lt;/p&gt;
+&lt;p&gt;One of the key changes is that the new documentation now teaches React with Hooks &lt;em&gt;&quot;from the beginning&quot;&lt;/em&gt;, rather than assuming readers are familiar with Class components. This approach aims to make it easier for developer new to the framework to learn React without having to learn it twice--first to gain context for recent changes and again to learn the latest design patterns. However, there are still some rare Class component use cases that do not have a Hook-based equivalent, and Class components remain supported and are documented in the Legacy API section of the new site.&lt;/p&gt;
+&lt;p&gt;The new site includes a self-paced course called &lt;a href=&quot;https://react.dev/learn&quot; title=&quot;Learn React&quot;&gt;Learn React&lt;/a&gt; that teaches React from scratch, with chapters covering the fundamentals of React, adding interactivity, managing state, and using Hooks. There is also an &lt;a href=&quot;https://react.dev/reference/react&quot; title=&quot;API Reference&quot;&gt;API Reference&lt;/a&gt; section that provides details and usage examples for every React API.&lt;/p&gt;
+&lt;p&gt;One of the standout features of the new site is the use of over 600 interactive examples throughout the site. The examples are provided in sandboxes, which can be edited, forked, and opened in a separate tab, allowing users to play with the React APIs and explore their own ideas.&lt;/p&gt;
+&lt;p&gt;The new React site has a modern look and feel and is designed to provide an engaging and participatory learning experience. However, some developers may find it challenging to adapt to the new approach, especially those who are accustomed to using Class components in React. Additionally, the transition to the new site and the separation of legacy content may cause confusion for new users googling for documentation without enough context about the version they are working with.&lt;/p&gt;
+&lt;h2&gt;React Class Components vs Function Components&lt;/h2&gt;
+&lt;p&gt;In the earlier days of React, Class components were the primary way of building components. However, with the release of React 16.8 in 2019, React introduced a new feature called Hooks, which made it possible to use state and other React features in Function components. This led to a significant shift in how developers build React applications, and Function components have become the preferred way of building components in modern React applications.&lt;/p&gt;
+&lt;p&gt;Function components are simpler and easier to understand than Class components. They are just plain JavaScript functions that return a piece of JSX. Function components also make it easy to write reusable code since they are more modular than Class components. In addition, Function components are faster to execute than Class components since they don&apos;t carry the overhead of the React component lifecycle.&lt;/p&gt;
+&lt;p&gt;Another significant benefit of Function components over Class components is that they don&apos;t have their own &lt;code&gt;this&lt;/code&gt; context. This means that they don&apos;t require the binding of &lt;code&gt;this&lt;/code&gt; in the constructor or in event handlers. In Class components, &lt;code&gt;this&lt;/code&gt; refers to the instance of the component, which can cause confusion and introduce bugs if not handled properly.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Function components are just plain JavaScript functions that return a piece of JSX.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Benefits of Function Components&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Simplicity:&lt;/strong&gt; Function components are simpler to write and understand than Class components. They are just plain JavaScript functions that return JSX, and there is no need to worry about &lt;code&gt;this&lt;/code&gt; or &lt;code&gt;bind&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Function components are typically faster than Class components because they have a smaller overhead. This is because they don&apos;t have any state or lifecycle methods, and don&apos;t need to create an instance of the component class.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Easier Testing:&lt;/strong&gt; Function components are easier to test than Class components because they don&apos;t have any state or lifecycle methods that need to be mocked up when considering unit test design.&lt;/p&gt;
+&lt;h3&gt;Functional Programming and React Function Components&lt;/h3&gt;
+&lt;h4&gt;Function components as Pure Functions&lt;/h4&gt;
+&lt;p&gt;The use of Function components in React is also related to the functional programming paradigm. Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data structures. In React, Function components can be thought of as pure functions that take in props as input and return JSX as output, because for any prop value input will yield consistent JSX.&lt;/p&gt;
+&lt;p&gt;By using Function components, we can embrace the functional programming paradigm and write more declarative, composable, and testable code. We can also take advantage of React Hooks, which are functions that allow us to use state and other React features in Function components without needing to use classes. To some in the functional community, the change of state may be considered a side effect, but consise and consistent purity of Function components are still a welcome improvement to React design patterns.&lt;/p&gt;
+&lt;p&gt;Overall, the shift from Class components to Function components in React aligns with a broader trend towards functional programming in the JavaScript community, and can lead to simpler, more performant, and more testable code.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Function components can be thought of as pure functions that take in props as input and return JSX as output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;Is JavaScript a Functional Language?&lt;/h4&gt;
+&lt;p&gt;Not quite--although JavaScript is definitely capable of providing some of the benefits of functional programming when written with functional design patterns in mind. It&apos;s possible to argue that JavaScript is &lt;strong&gt;both&lt;/strong&gt; a functional language (FP) and an object-oriented language (OOP).&lt;/p&gt;
+&lt;p&gt;To illustrate the spectrum of how the label &lt;em&gt;&quot;functional language&quot;&lt;/em&gt; is applied, let&apos;s consider a &lt;em&gt;&quot;purely functional&quot;&lt;/em&gt; language, Haskell. Haskell is a language where functions are always pure by default, meaning they don&apos;t change external things like global variables or mutable data structures, and always return the same output for the same input. This makes it easier to understand how functions behave and can lead to fewer bugs.&lt;/p&gt;
+&lt;p&gt;On the other hand, Clojure, which is widely-recognized as a functional language, allows side effects and mutable data structures, but it also has a lot of tools that support functional programming concepts like using immutable data structures and higher-order functions. This makes it easier to write code that is modular and less likely to break.&lt;/p&gt;
+&lt;p&gt;A key difference between Haskell and Clojure is that Haskell is &lt;strong&gt;statically-typed&lt;/strong&gt;, while Clojure is &lt;strong&gt;dynamically-typed&lt;/strong&gt;. We will get into the nitty-gritty of &lt;strong&gt;types&lt;/strong&gt; in a future blog post, but for now think about it like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Uncaught TypeError yourFunction is not a function&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The error above tells you that there is a mismatch between what &lt;code&gt;yourFunction&lt;/code&gt; is and how &lt;code&gt;yourFunction&lt;/code&gt; is being used.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;yourFunction&lt;/code&gt; is being called as a function somewhere in your code, but the language does not recognize it as a function because it does not meet the language&apos;s set of guidelines for what a function is, or how a function&apos;s &lt;strong&gt;&quot;type&quot;&lt;/strong&gt; is defined. (In this case, these guidelines are baked into the language as part of its implementation for &lt;code&gt;function&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Languages that perform type checking at compile time are considered &lt;strong&gt;statically-typed&lt;/strong&gt; and will error type mismatches before runtime. Languages that perform type checking at runtime are considered &lt;strong&gt;dynamically-typed&lt;/strong&gt; and will error at runtime.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JavaScript is a &lt;strong&gt;dynamically-typed&lt;/strong&gt; language. Specifically, the JavaScript interpreter assigns types at runtime and the error above would be seen after executing the program. This means that the program executed--&lt;em&gt;but with errors&lt;/em&gt;. A &lt;strong&gt;statically-typed&lt;/strong&gt; language errors during compilation and will not execute if there are type errors. The latter provides a safeguard by ensuring that a program that executes has met a certain threshold of analysis, the variables are being utilized in a way that is technically correct. If this sounds like an appealing feature, you may be interested in TypeScript, a superset of JavaScript that provides static-typing.&lt;/p&gt;
+&lt;p&gt;JavaScript may not be designed to be purely functional, but as a highly flexibly language it is possible to apply functional concepts in JavaScript with the goal of limiting side effects. Like the functional language Clojure, JavaScript is &lt;strong&gt;dynamically-typed&lt;/strong&gt;, but unlike Clojure, JavaScript widely allows for mutability. TypeScript provides more tools that support functional paradigms with JavaScript syntax, including static-typing and options for read-only variables. Haskell is a languages that is built with static-typing and immutability as core features.&lt;/p&gt;
+&lt;p&gt;React is a JavaScript framework written in and for JavaScript (and compatible with TypeScript), but is not in and of itself &quot;functional&quot;. Simply, recent changes and recommendations in the React documentation reflect functional programming design patterns that have become increasingly popular among JavaScript developers.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In summary, React Class components and Function components are two different ways of defining React components, but Function components are the standard design pattern in React moving forward. Class components are defined using ES6 classes and provide a more traditional object-oriented programming (OOP) approach to building React components. Function components, on the other hand, are defined using JavaScript functions and are a more functional programming (FP) approach to building React components.&lt;/p&gt;
+&lt;h3&gt;To migrate from Class components to Function components, developers need to do the following:&lt;/h3&gt;
+&lt;h4&gt;Let&apos;s start with the following Class component:&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;class Album extends React.Component {
+  constructor(title, artist, tracks) {
+    super();
+    this.state = {
+      title: title,
+      artist: artist,
+      songs: songs
+      };
+  }
+  render() {
+    return &amp;#x3C;p&gt;The album {this.title} by {this.artist} has been created!&amp;#x3C;/p&gt;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Convert the Class component to a Function component by changing the class declaration to a function declaration.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;const Album = (title, artist, tracks) =&gt; {
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Remove the render() method and move its return statement into the function body.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;const Album = (title, artist, tracks) =&gt; {
+...
+  return {
+   &amp;#x3C;p&gt;The album {this.title} by {this.artist} has been created!&amp;#x3C;/p&gt;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Replace the instance variables (this.state and this.props) with regular function arguments.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;const Album = (title, artist, tracks) =&gt; {
+  const [albumTitle, setAlbumTitle] = useState(title);
+  const [albumArtist, setAlbumArtist] = useState(artist);
+  const [albumTracks, setAlbumTracks] = useState(tracks);
+
+  return {
+   &amp;#x3C;p&gt;The album {albumTitle} by {albumArtist} has been created!&amp;#x3C;/p&gt;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your component uses lifecycle methods (componentDidMount(), componentDidUpdate(), etc.), these will need to be replaced with the useEffect Hook. I will cover this in the next blog post.&lt;/p&gt;</content:encoded></item></channel></rss>
