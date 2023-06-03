@@ -84,90 +84,87 @@ const DeskTopLayout = () => {
   return (
     <body className={styles.body}>
 
-    <main className={styles.main}>
-        <h1 id="about" className={styles.h1}>KATE GRANT</h1>
-        <Terminal />
-        <section>
-          <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
-          <div className={styles.animationContainer}>
-            <AnimatedSVGs svgData={svgData} />
-          </div>
-        </section>
-        <section className="skills" >
-          <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={`${styles.wavy} ${styles.githubLink}`}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
-        </section>
-        <section id="work" className="work">
-          <div>
-            <div id="project-item">
-              <WorkText/>
-              <ul ref={webRef} className={`${styles.fadeInLeft} ${webInView ? styles.visible : ""}`}>
-                <li><a href="https://github.com/kate-grant/kate-grant-portfolio" target="_blank">Kate Grant - Portfolio</a></li>
-                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li><a href="https://github.com/kate-grant/StarChart-3D" target="_blank">StarChart 3D</a></li>
-                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li><a href="https://github.com/team-joan-clarke/trip-app" target="_blank">Trippn</a></li>
-                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-                <li><a href="https://github.com/Matcha-with-Honey/Matcha-Shopper" target="_blank">AllMatcha</a></li>
-                <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
-              </ul>
-              <MobileText />
-              <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank"></a>YellowJacket</li>
-                <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
-              </ul>
-              <OpenSourceText />
-              <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
-                <li>Three.js</li>
-                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
-                <li>P5.js</li>
-                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
-                <li>Tablecloth</li>
-                <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
-              </ul>
+      <main className={styles.main}>
+          <h1 id="about" className={styles.h1}>KATE GRANT</h1>
+          <Terminal />
+          <section>
+            <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
+            <div className={styles.animationContainer}>
+              <AnimatedSVGs svgData={svgData} />
             </div>
-          </div>
-        </section>
-        <section id="play" className={styles.play}>
-          <h3>Creative Technology</h3>
-          <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
-            <li><a href="https://youareami.onrender.com/" target="_blank">YouAreAmI</a></li>
-            <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
-            <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="_blank">The Musical Web Showcase</a></li>
-            <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
-          </ul>
-        </section>
-        <section id="blog" className="blog">
-          <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
-          <ul>
-            <li><Link to='/new-react-documentation-2023/'>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</Link></li>
-          </ul>
-          <div className={styles.moreContainer}>
-            <Link className={`${styles.seeMoreBlog} ${styles.wavy}`} to='/blog'>See more →</Link>
-          </div>
-        </section>
-        <section id="contact" className={styles.contact}>
-          {/* <div>
-            <h2 ref={contactRef} className={`${styles.h2}  ${styles.fadeInRight} ${contactInView ? styles.visible : ""}`}>CONTACT</h2>
-          </div> */}
-          <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${contactOptionsInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={`${styles.wavy} ${styles.email}`} onClick={handleOpen}>Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
-          <Modal
-          className={styles.modal}
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-contact-form"
-          aria-describedby="modal-email-contact">
-            <>
-              <ContactForm close={handleClose}/>
-            </>
-          </Modal>
-          <div>
-              <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
-          </div>
-          <h4>Kate Grant © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
-        </section>
-    </main>
+          </section>
+          <section className="skills" >
+            <h3 ref={githubRef} className={`${styles.h3} ${styles.fadeIn} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={`${styles.wavy} ${styles.githubLink}`}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
+          </section>
+          <section id="work" className="work">
+            <div>
+              <div id="project-item">
+                <WorkText/>
+                <ul ref={webRef} className={`${styles.fadeInLeft} ${webInView ? styles.visible : ""}`}>
+                  <li><a href="https://github.com/kate-grant/kate-grant-portfolio" target="_blank">Kate Grant - Portfolio</a></li>
+                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  <li><a href="https://github.com/kate-grant/StarChart-3D" target="_blank">StarChart 3D</a></li>
+                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  <li><a href="https://github.com/team-joan-clarke/trip-app" target="_blank">Trippn</a></li>
+                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  <li><a href="https://github.com/Matcha-with-Honey/Matcha-Shopper" target="_blank">AllMatcha</a></li>
+                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                </ul>
+                <MobileText />
+                <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
+                  <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank"></a>YellowJacket</li>
+                  <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
+                </ul>
+                <OpenSourceText />
+                <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
+                  <li>Three.js</li>
+                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                  <li>P5.js</li>
+                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                  <li>Tablecloth</li>
+                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="play" className={styles.play}>
+            <h3>Creative Technology</h3>
+            <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
+              <li><a href="https://youareami.onrender.com/" target="_blank">YouAreAmI</a></li>
+              <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
+              <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="_blank">The Musical Web Showcase</a></li>
+              <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
+            </ul>
+          </section>
+          <section id="blog" className="blog">
+            <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
+            <ul>
+              <li><Link to='/new-react-documentation-2023/'>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</Link></li>
+            </ul>
+            <div className={styles.moreContainer}>
+              <Link className={`${styles.seeMoreBlog} ${styles.wavy}`} to='/blog'>See more →</Link>
+            </div>
+          </section>
+          <section id="contact" className={styles.contact}>
+            <div ref={contactOptionsRef} className={`${styles.contactOptions} ${styles.fadeIn} ${contactOptionsInView ? styles.visible : ""}`}><h4><a className={styles.wavy} href='https://www.linkedin.com/in/kate-grant-dev/'>LinkedIn</a></h4><h4><a className={`${styles.wavy} ${styles.email}`} onClick={handleOpen}>Email</a></h4><h4><a className={styles.wavy} href='https://github.com/kate-grant'>Github</a></h4></div>
+            <Modal
+            className={styles.modal}
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-contact-form"
+            aria-describedby="modal-email-contact">
+              <>
+                <ContactForm close={handleClose}/>
+              </>
+            </Modal>
+            <div>
+                <h3 ref={helloRef} className={`${styles.fadeIn} ${helloInView ? styles.visible : ""}`}>Say Hello</h3>
+            </div>
+            <h4>Kate Grant © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
+          </section>
+      </main>
     </body>
   )
 }
