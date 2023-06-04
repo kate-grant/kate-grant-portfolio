@@ -371,7 +371,7 @@ svg {
   .subtitle {
     padding-top: 1rem;;
     position: absolute;
-    top: 30rem;
+    top: 35rem;
     width: 80vw !important;
     z-index: 1;
   }
