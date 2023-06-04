@@ -67,7 +67,7 @@ const DeskTopLayout = () => {
     rootMargin: "40%",
   });
 
-  const svgData = window.height > 600 ? [
+  const svgData = [
     { url: 'static/Flwr_Lilac.svg', x: -200, y: 40, targetX: -10, targetY: 50, rotate: 940 },
     { url: 'static/React_Honey.svg', x: -150, y: 0, targetX: -5, targetY: 500, rotate: -8 },
     { url: 'static/diamond-fade.svg', x: -600, y: -20, targetX: -500, targetY: 1000, rotate: 540 },
@@ -78,17 +78,6 @@ const DeskTopLayout = () => {
     { url: 'static/OCaml_Berry.svg', x: 10, y: 150, targetX: -20, targetY: 40, rotate: 35 },
     { url: 'static/diamond-fade.svg', x: 100, y: 0, targetX: 300, targetY: 200, rotate: 270 },
     { url: 'static/diamond-fade.svg', x: 30, y: 0, targetX: -30, targetY: 10, rotate: 540 },
-  ] : [
-    { url: 'static/Flwr_Lilac.svg', x: -200, y: 0, targetX: -10, targetY: 10, rotate: 940 },
-    { url: 'static/React_Honey.svg', x: -150, y: 0, targetX: -5, targetY: 100, rotate: -8 },
-    { url: 'static/diamond-fade.svg', x: -600, y: -20, targetX: -500, targetY: 250, rotate: 540 },
-    { url: 'static/TypeScript_Berry.svg', x: -150, y: 0, targetX: -50, targetY: 8, rotate: -30 },
-    { url: 'static/diamond-fade.svg', x: 30, y: 0, targetX: -300, targetY: 12, rotate: 560 },
-    { url: 'static/Redux_OJ.svg', x: 70, y: 80, targetX: 65, targetY: 0, rotate: 25 },
-    { url: 'static/Flwr_Lilac.svg', x: 200, y: 50, targetX: 400, targetY: 10, rotate: 860 },
-    { url: 'static/OCaml_Berry.svg', x: 10, y: 150, targetX: -20, targetY: 8, rotate: 35 },
-    { url: 'static/diamond-fade.svg', x: 100, y: 0, targetX: 300, targetY: 40, rotate: 270 },
-    { url: 'static/diamond-fade.svg', x: 30, y: 0, targetX: -30, targetY: 2, rotate: 540 },
   ];
 
 
