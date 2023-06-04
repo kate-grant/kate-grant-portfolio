@@ -33,6 +33,10 @@ html {
   align-self: center;
 }
 
+.about {
+  height: 70vh;
+}
+
 .left {
   width: 45vw;
   float: left;
@@ -70,6 +74,20 @@ html {
   /* transform: translate(45, 0), rotate(-12deg); */
 }
 
+.hero {
+  position: absolute;
+  top: 7rem;
+  width: 60vw;
+  z-index: 5;
+}
+
+.subtitle {
+  position: absolute;
+  top: 28rem;
+  width: 50vw !important;
+  z-index: 1;
+}
+
 .h3 {
   font-family: 'Syne', sans-serif;
   font-weight: 500;
@@ -104,10 +122,9 @@ html {
 }
 
 .animationContainer {
-  top: -30vh;
-  height: 100vh;
+  padding-top: 12vh;
+  height: 75vh;
   width: 100vw;
-  z-index: -1;
 }
 
 .line {
@@ -150,7 +167,8 @@ ul {
 }
 
 ul li {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 4vw;
 }
 
 li a {
@@ -158,7 +176,6 @@ li a {
 }
 
 li:hover{
-  /* font-style: italic; */
   letter-spacing: 0.2rem;
   width: fit-content;
   color: #632020;
@@ -235,7 +252,7 @@ svg {
 
 
 .contact {
-  height: 100vh;
+  height: 80vh;
   width: 80vw;
   padding-top: 8rem;
   align-self: center;
@@ -270,6 +287,10 @@ svg {
   padding: 1rem;
 }
 
+.contactOptions h4:hover {
+  color: #ff006a;
+}
+
 .email:hover {
   cursor: pointer;
 }
@@ -284,3 +305,116 @@ svg {
   font-family: 'Syne', sans-serif;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+  .h2 {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 10vw;
+    color: #ff006a;
+    width: 100vw;
+  }
+
+  .h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 8vw;
+    color: #ff006a;
+    width: 80vw;
+  }
+
+  .blogTitle {
+    font-size: 10vw;
+    width: 80vw;
+  }
+
+  .seeMoreBlog {
+    font-size: 12vw;
+    color: #ff006a !important;
+    float: right;
+  }
+
+  ul {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #ff006a;
+    width: 60vw;
+    list-style-type: none;
+    margin-top: 3vh;
+    list-style: none;
+  }
+
+  ul li {
+    font-size: 6vw;
+  }
+
+  li:hover{
+    letter-spacing: 0.1rem;
+    width: fit-content;
+    color: #632020;
+    background-color: #ff006a;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    transform: translate(10px, 0); transition: all 1s;
+  }
+
+  .hero {
+    position: absolute;
+    top: 15rem;
+    width: 80vw;
+    z-index: 5;
+  }
+
+  .subtitle {
+    padding-top: 1rem;;
+    position: absolute;
+    top: 30rem;
+    width: 80vw !important;
+    z-index: 1;
+  }
+
+  .animationContainer {
+    height: 75vh;
+    width: 100vw;
+  }
+
+  .contact {
+    height: 100vh;
+    width: 80vw;
+    align-self: center;
+  }
+
+  .contactOptions {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .contactOptions a {
+    font-size: 3vh;
+    padding: 2vh;
+  }
+
+  .contact h2 {
+    font-size: 20vh;
+    align-self: center;
+  }
+
+  .contact h3 {
+    font-size: 10vh;
+    color:#e0a1a1;
+    text-align: center;
+  }
+
+  .contact h4 {
+    font-size: 3vh;
+    color:#e0a1a1;
+    text-align: center;
+  }
+}
+

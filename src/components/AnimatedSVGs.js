@@ -17,7 +17,7 @@ const AnimatedSVGs = ({ svgData }) => {
   const animate = () => {
     const container = d3.select(containerRef.current);
     const svgElements = container.selectAll("svg");
-    const windowHeight = window.innerHeight;
+    const windowHeight = window.innerHeight > 600 ? window.innerHeight : window.innerHeight / 5 ;
 
 
     svgElements.each(function (d) {
