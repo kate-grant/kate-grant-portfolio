@@ -53,7 +53,7 @@ html {
   /* font-family: 'Noto Sans', sans-serif; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #ff006a;
   width: 60vw;
 }
@@ -141,7 +141,7 @@ ul {
   /* font-family: 'Noto Sans', sans-serif; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 4vw;
   color: #ff006a;
   width: 60vw;
   list-style-type: none;
@@ -149,12 +149,17 @@ ul {
   list-style: none;
 }
 
+ul li {
+  margin-bottom: 2rem;
+}
+
 li a {
   text-decoration: none;
 }
 
 li:hover{
-  font-style: italic;
+  /* font-style: italic; */
+  letter-spacing: 0.2rem;
   width: fit-content;
   color: #632020;
   background-color: #ff006a;

@@ -102,27 +102,27 @@ const DeskTopLayout = () => {
                 <WorkText/>
                 <ul ref={webRef} className={`${styles.fadeIn} ${webInView ? styles.visible : ""}`}>
                   <li><a href="https://github.com/kate-grant/kate-grant-portfolio" target="_blank">Kate Grant - Portfolio</a></li>
-                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                   <li><a href="https://github.com/kate-grant/StarChart-3D" target="_blank">StarChart 3D</a></li>
-                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                   <li><a href="https://github.com/team-joan-clarke/trip-app" target="_blank">Trippn</a></li>
-                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                   <li><a href="https://github.com/Matcha-with-Honey/Matcha-Shopper" target="_blank">AllMatcha</a></li>
-                  <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                 </ul>
                 <MobileText />
                 <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
                   <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank">YellowJacket</a></li>
-                  <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/> */}
                 </ul>
                 <OpenSourceText />
                 <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
                   <li>Three.js</li>
-                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                   <li>P5.js</li>
-                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                   <li>Tablecloth</li>
-                  <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/>
+                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                 </ul>
               </div>
             </div>
@@ -131,9 +131,7 @@ const DeskTopLayout = () => {
             <h3>Creative Technology</h3>
             <ul ref={playRef} className={`${styles.fadeIn} ${playInView ? styles.visible : ""}`}>
               <li><a href="https://youareami.onrender.com/" target="_blank">YouAreAmI</a></li>
-              <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
               <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="_blank">The Musical Web Showcase</a></li>
-              <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
             </ul>
           </section>
           <section id="blog" className="blog">
