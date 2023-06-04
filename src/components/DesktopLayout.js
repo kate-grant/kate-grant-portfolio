@@ -100,7 +100,7 @@ const DeskTopLayout = () => {
             <div>
               <div id="project-item">
                 <WorkText/>
-                <ul ref={webRef} className={`${styles.fadeInLeft} ${webInView ? styles.visible : ""}`}>
+                <ul ref={webRef} className={`${styles.fadeIn} ${webInView ? styles.visible : ""}`}>
                   <li><a href="https://github.com/kate-grant/kate-grant-portfolio" target="_blank">Kate Grant - Portfolio</a></li>
                   <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/>
                   <li><a href="https://github.com/kate-grant/StarChart-3D" target="_blank">StarChart 3D</a></li>
@@ -112,7 +112,7 @@ const DeskTopLayout = () => {
                 </ul>
                 <MobileText />
                 <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                  <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank"></a>YellowJacket</li>
+                  <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank">YellowJacket</a></li>
                   <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/>
                 </ul>
                 <OpenSourceText />
@@ -129,7 +129,7 @@ const DeskTopLayout = () => {
           </section>
           <section id="play" className={styles.play}>
             <h3>Creative Technology</h3>
-            <ul ref={playRef} className={`${styles.fadeInLeft} ${playInView ? styles.visible : ""}`}>
+            <ul ref={playRef} className={`${styles.fadeIn} ${playInView ? styles.visible : ""}`}>
               <li><a href="https://youareami.onrender.com/" target="_blank">YouAreAmI</a></li>
               <hr className={`${styles.line} ${playInView ? styles.visible : ""}`}/>
               <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="_blank">The Musical Web Showcase</a></li>

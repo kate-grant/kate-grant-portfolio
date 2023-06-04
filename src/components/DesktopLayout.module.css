@@ -146,10 +146,20 @@ ul {
   width: 60vw;
   list-style-type: none;
   margin-top: 20vh;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
 }
 
 li:hover{
   font-style: italic;
+  width: fit-content;
+  color: #632020;
+  background-color: #ff006a;
+  padding-left: 2rem;
+  padding-right: 2rem;
   transform: translate(10px, 0); transition: all 1s;
 }
 
@@ -171,7 +181,6 @@ svg {
   align-self: center;
   justify-content: center;
   padding: 3rem;
-  text-align: center;
 
 }
 
