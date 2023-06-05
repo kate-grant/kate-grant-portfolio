@@ -51,6 +51,7 @@ html {
   font-size: 5rem;
   letter-spacing: 2px;
   color:#ff006a;
+  z-index: 5;
 }
 
 .h2 {
@@ -78,6 +79,7 @@ html {
   position: absolute;
   top: 7rem;
   width: 60vw;
+  padding-bottom: 2rem !important;
   z-index: 5;
 }
 
@@ -85,6 +87,7 @@ html {
   position: absolute;
   top: 28rem;
   width: 50vw !important;
+  font-size: 3vw !important;
   z-index: 1;
 }
 
@@ -306,7 +309,11 @@ svg {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
+.terminal {
+  z-index: 6;
+}
+
+@media only screen and (max-width: 800px) {
   .h2 {
     /* font-family: 'Noto Sans', sans-serif; */
     font-family: 'Syne', sans-serif;
@@ -365,15 +372,16 @@ svg {
     position: absolute;
     top: 15rem;
     width: 80vw;
+    padding-bottom: 5rem !important;
     z-index: 5;
   }
 
   .subtitle {
-    padding-top: 1rem;;
+    padding-top: 1rem;
     position: absolute;
-    top: 35rem;
+    top: 50rem;
     width: 80vw !important;
-    z-index: 1;
+    z-index: 5;
   }
 
   .animationContainer {
@@ -416,5 +424,18 @@ svg {
     color:#e0a1a1;
     text-align: center;
   }
+  .terminal {
+    width: 100vw;
+  }
 }
 
+@media only screen and (max-width: 300px) {
+  .subtitle {
+    padding-top: 1rem;
+    position: absolute;
+    top: 35rem;
+    width: 80vw !important;
+    font-size: 9vw !important;
+    z-index: 5;
+  }
+}

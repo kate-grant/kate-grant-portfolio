@@ -86,8 +86,7 @@ const DeskTopLayout = () => {
 
       <main className={styles.main}>
           <h1 id="about" className={styles.h1}>KATE GRANT</h1>
-          <Terminal className={styles.terminal}/>
-          <section className={styles.animationContainer}>
+          <section id="animationContainer" className={styles.animationContainer}>
               <AnimatedSVGs svgData={svgData} />
           </section>
           <section>
@@ -162,6 +161,7 @@ const DeskTopLayout = () => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a></h4>
           </section>
+          <Terminal className={styles.terminal}/>
       </main>
     </body>
   )
