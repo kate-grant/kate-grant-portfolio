@@ -104,14 +104,14 @@ const DeskTopLayout = () => {
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                   <li><Link to='/projects/#starchart-3d'>StarChart 3D</Link></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><a href="https://github.com/team-joan-clarke/trip-app" target="_blank">Trippn</a></li>
+                  <li><Link to='/projects/#trippn'>Trippn</Link></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><a href="https://github.com/Matcha-with-Honey/Matcha-Shopper" target="_blank">AllMatcha</a></li>
+                  <li><Link to='/projects/#allmatcha'>AllMatcha</Link></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                 </ul>
                 <MobileText />
                 <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                  <li><a href="https://github.com/kate-grant/YellowJacket" target="_blank">YellowJacket</a></li>
+                  <li><Link to='/projects/#yellowjacket'>YellowJacket</Link></li>
                   {/* <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/> */}
                 </ul>
                 <OpenSourceText />
@@ -129,8 +129,8 @@ const DeskTopLayout = () => {
           <section id="play" className={styles.play}>
             <h3>Creative Technology</h3>
             <ul ref={playRef} className={`${styles.fadeIn} ${playInView ? styles.visible : ""}`}>
-              <li><a href="https://youareami.onrender.com/" target="_blank">YouAreAmI</a></li>
-              <li><a href="https://thrilling-deluxe-limburger.glitch.me/" target="_blank">The Musical Web Showcase</a></li>
+              <li><Link to='/projects/#youareami'>YouAreAmI</Link></li>
+              <li><Link to='/projects/#the-musical-web-showcase'>The Musical Web Showcase</Link></li>
             </ul>
           </section>
           <section id="blog" className="blog">
