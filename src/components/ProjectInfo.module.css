@@ -18,7 +18,7 @@
   min-height: fit-content;
   padding: 5%;
   background-color: #e0a1a1;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: visible;
 }
 
