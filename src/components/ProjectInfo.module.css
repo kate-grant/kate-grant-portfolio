@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500&display=swap');
+
+.projectInfoContainer {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff006a;
+  grid-template-columns: 1fr 5fr;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  grid-gap: 2px;
+  margin-bottom: 4px;
+  color: #632020;
+}
+
+.projectInfoContainer div {
+  min-width: fit-content;
+  min-height: fit-content;
+  padding: 5%;
+  background-color: #e0a1a1;
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+.projectInfoContainer p {
+  width: 30vw;
+}
+
+.projectInfoContainer h2 {
+  width: inherit;
+}
+
+.projectInfoContainer a {
+  padding-right: 1rem;
+}
+
+.projectInfoContainer a:hover {
+  color: #ff006a !important;
+}
+
+.projectInfoContainer img {
+ height: 100%;
+ border-radius: 25px;
+}
+
+.projectInfoContainer ul {
+  margin-top: 0px;
+}
+
+.projectInfoContainer li {
+  font-size: 0.75rem;
+}
+
+.projectInfoContainer li:hover {
+  letter-spacing: 0;
+  width: auto;
+  color: #632020;
+  background-color: transparent;
+  padding-left: inherit;
+  padding-right: inherit;
+  transform: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .projectInfoContainer {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff006a;
+    grid-template-columns: 1fr;
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    grid-gap: 0.5%;
+  }
+
+  .projectInfoContainer div {
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: 5%;
+    background-color: #e0a1a1;
+    justify-content: center;
+    align-content: center;
+    overflow-y: auto;
+  }
+}
