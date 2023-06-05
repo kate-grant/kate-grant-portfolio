@@ -27,7 +27,7 @@ const Projects = () => {
       title: "The Musical Web Showcase",
       id: "the-musical-web-showcase",
       imgUrl: "../static/musical-web-showcase-media-img.png",
-      technologies: ["Google Firebase", "Hugging Face ML", "JavaScript"],
+      technologies: ["ShaderPark", "Three.js", "JavaScript"],
       overview: "This website was built to showcase creative works made by students during the SFPC The Musical Web course, a 3-month exploration of Web Audio. This course used Glitch as the main collaborative and educational coding environment, and in the spirit of this, this website was made on Glitch. I participated in this course as a student. ",
       githubUrl: "https://github.com/kate-grant/musical-web-showcase",
       demoUrl: "https://thrilling-deluxe-limburger.glitch.me/"
