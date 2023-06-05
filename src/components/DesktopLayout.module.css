@@ -185,6 +185,9 @@ li:hover{
   background-color: #ff006a;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+section li:hover {
   transform: translate(10px, 0); transition: all 1s;
 }
 
@@ -365,6 +368,9 @@ svg {
     background-color: #ff006a;
     padding-left: 3vw;
     padding-right: 3vw;
+  }
+
+  section li:hover {
     transform: translate(10px, 0); transition: all 1s;
   }
 

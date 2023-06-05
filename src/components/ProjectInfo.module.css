@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #ff006a;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   grid-gap: 2px;
@@ -58,28 +58,47 @@
   background-color: transparent;
   padding-left: inherit;
   padding-right: inherit;
-  transform: none;
+  transform: translate(2px, 0); transition: all 1s;
 }
 
 @media only screen and (max-width: 800px) {
   .projectInfoContainer {
-    display: grid;
+    display: flex;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     background-color: #ff006a;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     font-family: 'Syne', sans-serif;
     font-weight: 500;
-    grid-gap: 0.5%;
+    grid-gap: 2px;
   }
 
   .projectInfoContainer div {
-    min-width: fit-content;
-    min-height: fit-content;
+    min-width: 100vw;
+    min-height: none;
     padding: 5%;
     background-color: #e0a1a1;
     justify-content: center;
     align-content: center;
     overflow-y: auto;
+  }
+
+  .projectInfoContainer img {
+    width: 85vw;
+    border-radius: 5px;
+   }
+
+   .projectInfoContainer p {
+    width: 100%;
+  }
+
+  .projectInfoContainer li:hover {
+    letter-spacing: 0;
+    width: auto;
+    color: #632020;
+    background-color: transparent;
+    padding-left: inherit;
+    padding-right: inherit;
+    transform: translate(2px, 0); transition: all 1s !important;
   }
 }
