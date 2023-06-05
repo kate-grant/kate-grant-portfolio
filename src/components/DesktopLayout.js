@@ -102,7 +102,7 @@ const DeskTopLayout = () => {
                 <ul ref={webRef} className={`${styles.fadeIn} ${webInView ? styles.visible : ""}`}>
                   <li><Link to='/projects/#kate-grant-portfolio'>Kate Grant - Portfolio</Link></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><a href="https://github.com/kate-grant/StarChart-3D" target="_blank">StarChart 3D</a></li>
+                  <li><Link to='/projects/#starchart-3d'>StarChart 3D</Link></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
                   <li><a href="https://github.com/team-joan-clarke/trip-app" target="_blank">Trippn</a></li>
                   {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
