@@ -14,6 +14,11 @@ text {
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  fill: #ddbff5;
+  fill: #ff006a;
+  z-index: 7;
+  /* fill: #e0a1a1; */
+  /* mix-blend-mode: multiply; */
+  /* fill: #ddbff5; */
+  transform: rotate(5deg);
 }
 
