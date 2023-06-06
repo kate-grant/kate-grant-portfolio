@@ -73,7 +73,7 @@ const Projects = () => {
   return (
     <div className={styles.allProjectContainer}>
       {projectData.map((singleProject) => {
-        return <ProjectInfo project={singleProject} id={singleProject.id} key={singleProject.id}/>
+        return <ProjectInfo project={singleProject} key={singleProject.id}/>
       })}
     </div>
 
