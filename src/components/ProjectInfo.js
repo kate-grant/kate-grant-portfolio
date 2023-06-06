@@ -4,10 +4,10 @@ import * as styles from "../components/ProjectInfo.module.css"
 
 const ProjectInfo = ({project}) => {
   console.log(project);
-  const {title, imgUrl, technologies, overview, githubUrl, demoUrl} = project;
+  const {title, id, imgUrl, technologies, overview, githubUrl, demoUrl} = project;
   console.log("in single project")
   return (
-    <div className={styles.projectInfoContainer}>
+    <div id={id} className={styles.projectInfoContainer}>
       <div>
         <h2 id="projectSectionTitle">{title}</h2>
       </div>
