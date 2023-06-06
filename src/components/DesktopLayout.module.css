@@ -14,7 +14,8 @@
 
 html {
   background-color: #632020;
-  margin-left: 0;
+  width: 100vw;
+  margin: 0;
 }
 
 .main {
@@ -23,7 +24,7 @@ html {
   background-color: #632020;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
-  width: 90vw;
+  width: 100vw;
   align-self: center;
 }
 
@@ -264,11 +265,23 @@ svg {
   transform: translate(-50%, -50%);
 }
 
+.opensourceContainer {
+  margin-left: 15px;
+  margin-top: 3vh;
+  display: grid;
+  grid-row: 1;
+}
+
+.opensourceContainer ul {
+  margin-top: 1em;
+}
+
 .play {
   position: absolute;
   display: flex;
   top: 500vh;
   flex-direction: column;
+  height: 100vh;
   width: 100vw;
   background-image: linear-gradient(#e0a1a1 70%, #ff006a);
   align-self: center;
@@ -290,7 +303,7 @@ svg {
 }
 
 .play h3 {
-  font-size: 3rem;
+  font-size: 7rem;
 }
 
 .play h4 {
@@ -329,11 +342,12 @@ svg {
 
 .contact {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 700vh;
   height: 80vh;
-  width: 80vw;
+  width: 100vw;
   padding-top: 8rem;
-  align-self: center;
 }
 
 .contact h2 {
@@ -354,7 +368,6 @@ svg {
 
 .contactOptions {
   display: flex;
-  width: inherit;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
@@ -362,7 +375,7 @@ svg {
 
 .contactOptions a {
   font-size: 1.7rem;
-  padding: 1rem;
+  padding: 2em;
 }
 
 .contactOptions h4:hover {
@@ -518,8 +531,7 @@ svg {
   .contact {
     position: absolute;
     top: 400vh;
-    height: 100vh;
-    width: 80vw;
+    width: 100vw;
     align-self: center;
   }
 
@@ -533,7 +545,7 @@ svg {
 
   .contactOptions a {
     font-size: 3vh;
-    padding: 2vh;
+    /* padding: 2vh; */
   }
 
   .contact h2 {

@@ -111,34 +111,33 @@ const DeskTopLayout = () => {
                 <img src="./static/allmatcha-media-img.png" />
                 <Link to='/projects/#allmatcha'>AllMatcha</Link>
               </div>
+              <div className={styles.card} style={{transform: "rotate(6deg)"}}>
+                <img src="./static/yellowjacket-media-img.png" />
+                <Link to='/projects/#yellowjacket'>YellowJacket</Link>
+              </div>
               <div className={styles.card} style={{transform: "rotate(-7deg)"}}>
                 <img src="./static/musical-web-showcase-media-img.png" />
                 <Link to='/projects/#musical-web-showcase'>Musical Web Showcase</Link>
               </div>
               <div className={styles.card} style={{transform: "rotate(1deg)"}}>
-              <img src="./static/youareami-media-img.png" />
+                <img src="./static/youareami-media-img.png" />
                 <Link to='/projects/#youareami'>YouAreAmI</Link>
               </div>
-              {/* <div id="project-item" className={styles.projectItem}>
-                <WorkText/>
-                <ul ref={webRef} className={`${styles.fadeIn} ${webInView ? styles.visible : ""}`}>
-                  <li><Link to='/projects/#kate-grant-portfolio'>Kate Grant - Portfolio</Link></li>
-                  <li><Link to='/projects/#starchart-3d'>StarChart 3D</Link></li>
-                  <li><Link to='/projects/#trippn'>Trippn</Link></li>
-                  <li><Link to='/projects/#allmatcha'>AllMatcha</Link></li>
-                </ul>
-                <MobileText />
-                <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                  <li><Link to='/projects/#yellowjacket'>YellowJacket</Link></li>
-                </ul>
-                <OpenSourceText />
-                <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
+              <WorkText />
+              <MobileText />
+              <OpenSourceText />
+            </div>
+            <div className={styles.opensourceContainer}>
+              <div>
+                <h2 className={styles.h2}>Open Source Contributions</h2>
+              </div>
+              <div>
+                <ul>
                   <li>Three.js</li>
                   <li>P5.js</li>
                   <li>Tablecloth</li>
-
                 </ul>
-              </div> */}
+              </div>
             </div>
           </section>
           <section id="play" className={styles.play}>
