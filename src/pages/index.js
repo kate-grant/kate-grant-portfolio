@@ -9,4 +9,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Kate Grant - Software Engineer</title>
