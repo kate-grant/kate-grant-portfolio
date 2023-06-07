@@ -287,7 +287,6 @@ svg {
   align-self: center;
   justify-content: center;
   padding: 3rem;
-
 }
 
 .play ul {
@@ -579,4 +578,100 @@ svg {
     font-size: 9vw !important;
     z-index: 5;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .play {
+    position: absolute;
+    display: flex;
+    top: 550vh;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#e0a1a1 70%, #ff006a);
+    align-self: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .blog {
+    position: absolute;
+    top: 650vh;
+  }
+
+  .contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 750vh;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 8rem;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  .play {
+    position: absolute;
+    display: flex;
+    top: 600vh;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#e0a1a1 70%, #ff006a);
+    align-self: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .blog {
+    position: absolute;
+    top: 700vh;
+  }
+
+  .contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 800vh;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 8rem;
+  }
+
+}
+
+@media only screen and (min-width: 1800px) {
+
+  .play {
+    position: absolute;
+    display: flex;
+    top: 700vh;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#e0a1a1 70%, #ff006a);
+    align-self: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .blog {
+    position: absolute;
+    top: 800vh;
+  }
+
+  .contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 900vh;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 8rem;
+  }
+
 }
