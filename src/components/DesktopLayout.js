@@ -82,46 +82,60 @@ const DeskTopLayout = () => {
 
 
   return (
-    <body className={styles.body}>
+    // <body className={styles.body}>
 
       <main className={styles.main}>
           <h1 id="about" className={styles.h1}>KATE GRANT</h1>
           <section id="animationContainer" className={styles.animationContainer}>
               <AnimatedSVGs svgData={svgData} />
           </section>
-          <section>
-            <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${styles.hero} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
-          </section>
-          <section className="skills" >
+          <section className={styles.hero}>
+            <h2 ref={heroRef} className={`${styles.h2} ${styles.fadeIn} ${heroInView ? styles.visible : ""}`}>I am a Brooklyn-based <span className="t">fullstack</span> software engineer with a <span className={styles.wavy}>love</span> of <span className={styles.wavy}>functional</span> programming.</h2>
             <h3 ref={githubRef} className={`${styles.h3} ${styles.subtitle} ${styles.fadeInRight} ${githubInView ? styles.visible : ""}`}>Check out what I'm currently building by visiting my <span className={`${styles.wavy} ${styles.githubLink}`}><a href="https://github.com/kate-grant">Github</a></span>.</h3>
           </section>
-          <section id="work" className="work">
-            <div>
-              <div id="project-item">
-                <WorkText/>
-                <ul ref={webRef} className={`${styles.fadeIn} ${webInView ? styles.visible : ""}`}>
-                  <li><Link to='/projects/#kate-grant-portfolio'>Kate Grant - Portfolio</Link></li>
-                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><Link to='/projects/#starchart-3d'>StarChart 3D</Link></li>
-                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><Link to='/projects/#trippn'>Trippn</Link></li>
-                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                  <li><Link to='/projects/#allmatcha'>AllMatcha</Link></li>
-                  {/* <hr className={`${styles.line} ${webInView ? styles.visible : ""}`}/> */}
-                </ul>
-                <MobileText />
-                <ul ref={mobileRef} className={`${styles.fadeInLeft} ${mobileInView ? styles.visible : ""}`}>
-                  <li><Link to='/projects/#yellowjacket'>YellowJacket</Link></li>
-                  {/* <hr className={`${styles.line} ${mobileInView ? styles.visible : ""}`}/> */}
-                </ul>
-                <OpenSourceText />
-                <ul ref={openSourceRef} className={`${styles.fadeInLeft} ${openSourceInView ? styles.visible : ""}`}>
+          <section id="work" className={`work ${styles.work}`}>
+            <div className={styles.cardContainer} style={{transform: "rotate(5deg)"}}>
+              <div className={styles.card}>
+                <img src="./static/portfolio-media-img.png" />
+                <Link to='/projects/#kate-grant-portfolio'>Portfolio</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(-1deg)"}}>
+                <img src="./static/starchart3d-media-img.png" />
+                <Link to='/projects/#starchart-3d'>StarChart3D</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(-3deg)"}}>
+                <img src="./static/trippn-media-img.png" />
+                <Link to='/projects/#trippn'>Trippn</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(6deg)"}}>
+                <img src="./static/allmatcha-media-img.png" />
+                <Link to='/projects/#allmatcha'>AllMatcha</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(6deg)"}}>
+                <img src="./static/yellowjacket-media-img.png" />
+                <Link to='/projects/#yellowjacket'>YellowJacket</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(-7deg)"}}>
+                <img src="./static/musical-web-showcase-media-img.png" />
+                <Link to='/projects/#musical-web-showcase'>Musical Web Showcase</Link>
+              </div>
+              <div className={styles.card} style={{transform: "rotate(1deg)"}}>
+                <img src="./static/youareami-media-img.png" />
+                <Link to='/projects/#youareami'>YouAreAmI</Link>
+              </div>
+              <WorkText />
+              <MobileText />
+              <OpenSourceText />
+            </div>
+            <div className={styles.opensourceContainer}>
+              <div>
+                <h2 className={styles.h2}>Open Source Contributions</h2>
+              </div>
+              <div>
+                <ul>
                   <li>Three.js</li>
-                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                   <li>P5.js</li>
-                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                   <li>Tablecloth</li>
-                  {/* <hr className={`${styles.line} ${openSourceInView ? styles.visible : ""}`}/> */}
                 </ul>
               </div>
             </div>
@@ -133,7 +147,7 @@ const DeskTopLayout = () => {
               <li><Link to='/projects/#the-musical-web-showcase'>The Musical Web Showcase</Link></li>
             </ul>
           </section>
-          <section id="blog" className="blog">
+          <section id="blog" className={`blog ${styles.blog}`}>
             <h2 ref={blogRef} className={`${styles.h2Decorated} ${styles.blogTitle} ${styles.fadeInRight} ${blogInView ? styles.visible : ""}`}>Blog</h2>
             <ul>
               <li><Link to='/new-react-documentation-2023/'>New React Documentation: An Overview of New Documentation and Design Patterns &#40;2023&#41;</Link></li>
@@ -163,7 +177,7 @@ const DeskTopLayout = () => {
           </section>
           <Terminal className={styles.terminal}/>
       </main>
-    </body>
+    // </body>
   )
 }
 
