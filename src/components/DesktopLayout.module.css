@@ -76,6 +76,7 @@ html {
   top: 0;
   padding-top: 12vh;
   width: 60vw;
+  height: 100vh;
   margin-left: 15px;
   padding-bottom: 2vh !important;
   z-index: 5;
@@ -210,6 +211,7 @@ svg {
   top: 100vh;
   width: 100vw;
   align-content: center;
+  padding-top: 15%;
 }
 
 .projectItem {
@@ -279,7 +281,7 @@ svg {
 .play {
   position: absolute;
   display: flex;
-  top: 500vh;
+  top: 100vh;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
@@ -325,7 +327,7 @@ svg {
 
 .blog {
   position: absolute;
-  top: 600vh;
+  top: 650vh;
 }
 
 .seeMoreBlog {
@@ -343,7 +345,7 @@ svg {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 700vh;
+  top: 750vh;
   height: 80vh;
   width: 100vw;
   padding-top: 8rem;
@@ -580,12 +582,12 @@ svg {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75vh) {
 
   .play {
     position: absolute;
     display: flex;
-    top: 550vh;
+    top: 650vmin;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
@@ -597,14 +599,14 @@ svg {
 
   .blog {
     position: absolute;
-    top: 650vh;
+    top: 750vmin;
   }
 
   .contact {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 750vh;
+    top: 850vmin;
     height: 80vh;
     width: 100vw;
     padding-top: 8rem;
@@ -612,12 +614,13 @@ svg {
 
 }
 
-@media only screen and (min-width: 1500px) {
+
+@media only screen and (min-width: 100vh) {
 
   .play {
     position: absolute;
     display: flex;
-    top: 600vh;
+    top: 750vmin;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
@@ -629,14 +632,14 @@ svg {
 
   .blog {
     position: absolute;
-    top: 700vh;
+    top: 850vmin;
   }
 
   .contact {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 800vh;
+    top: 950vmin;
     height: 80vh;
     width: 100vw;
     padding-top: 8rem;
@@ -644,12 +647,12 @@ svg {
 
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 125vh) {
 
   .play {
     position: absolute;
     display: flex;
-    top: 700vh;
+    top: 950vmin;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
@@ -661,14 +664,78 @@ svg {
 
   .blog {
     position: absolute;
-    top: 800vh;
+    top: 1050vmin;
   }
 
   .contact {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 900vh;
+    top: 1150vmin;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 8rem;
+  }
+
+}
+
+@media only screen and (min-width: 150vh) {
+
+  .play {
+    position: absolute;
+    display: flex;
+    top: 700vmin;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#e0a1a1 70%, #ff006a);
+    align-self: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .blog {
+    position: absolute;
+    top: 800vmin;
+  }
+
+  .contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 900vmin;
+    height: 80vh;
+    width: 100vw;
+    padding-top: 8rem;
+  }
+
+}
+
+@media only screen and (min-width: 200vh) {
+
+  .play {
+    position: absolute;
+    display: flex;
+    top: 750vmin;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#e0a1a1 70%, #ff006a);
+    align-self: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .blog {
+    position: absolute;
+    top: 850vmin;
+  }
+
+  .contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 950vmin;
     height: 80vh;
     width: 100vw;
     padding-top: 8rem;
