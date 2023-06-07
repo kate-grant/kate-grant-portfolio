@@ -12,14 +12,14 @@
   margin: 0;
 }
 
-html {
+html, body {
   background-color: #632020;
   width: 100vw;
   margin: 0;
 }
 
 .main {
-  display: flex;
+  display: block;
   flex-direction: column;
   background-color: #632020;
   font-family: 'Syne', sans-serif;
@@ -40,8 +40,7 @@ html {
 .h1 {
   position: sticky;
   margin-top: 10px;
-  margin-left: 15px;
-  /* font-family: 'Noto Sans', sans-serif; */
+  margin-left: 3vw;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   font-size: 5rem;
@@ -51,7 +50,6 @@ html {
 }
 
 .h2 {
-  /* font-family: 'Noto Sans', sans-serif; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   font-size: 4vw;
@@ -60,24 +58,19 @@ html {
 }
 
 .h2Decorated {
-  /* position: absolute; */
-  /* right: 5vw; */
   font-family: 'Syne', sans-serif;
   font-weight: 500;
   font-size: 9rem;
   padding-left: 3vw;
   padding-right: 3vw;
   color: #e0a1a1;
-  /* transform: translate(45, 0), rotate(-12deg); */
 }
 
 .hero {
-  position: absolute;
-  top: 0;
-  padding-top: 12vh;
+  padding-top: 6vh;
   width: 60vw;
   height: 100vh;
-  margin-left: 15px;
+  margin-left: 3vw;
   padding-bottom: 2vh !important;
   z-index: 5;
 }
@@ -130,7 +123,6 @@ html {
   position: absolute;
   top: 20vh;
   left: 20%;
-  /* padding-top: 12vh; */
   height: 75vh;
   width: 80vw;
 }
@@ -207,8 +199,8 @@ svg {
 }
 
 .work {
-  position: absolute;
-  top: 100vh;
+  /* position: absolute;
+  top: 100vh; */
   width: 100vw;
   align-content: center;
   padding-top: 15%;
@@ -268,8 +260,8 @@ svg {
 }
 
 .opensourceContainer {
-  margin-left: 15px;
-  margin-top: 3vh;
+  margin-left: 3vw;
+  margin-top: 10vh;
   display: grid;
   grid-row: 1;
 }
@@ -279,9 +271,9 @@ svg {
 }
 
 .play {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
-  top: 100vh;
+  /* top: 100vh; */
   flex-direction: column;
   height: 100vh;
   width: 100vw;
@@ -326,8 +318,7 @@ svg {
 }
 
 .blog {
-  position: absolute;
-  top: 650vh;
+  height: 100vh;
 }
 
 .seeMoreBlog {
@@ -342,10 +333,10 @@ svg {
 
 
 .contact {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
-  top: 750vh;
+  /* top: 750vh; */
   height: 80vh;
   width: 100vw;
   padding-top: 8rem;
@@ -508,7 +499,7 @@ svg {
     width: 100%;
     border-radius: 1em;
     mix-blend-mode: luminosity;
-    filter: blur(5px);
+    filter: blur(3px);
   }
 
   .play {
@@ -582,7 +573,7 @@ svg {
   }
 }
 
-@media only screen and (min-width: 75vh) {
+/* @media only screen and (min-width: 75vh) {
 
   .play {
     position: absolute;
@@ -741,4 +732,4 @@ svg {
     padding-top: 8rem;
   }
 
-}
+} */
