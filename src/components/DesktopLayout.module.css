@@ -458,6 +458,7 @@ svg {
     padding-top: 2rem;
     position: relative;
     width: 80vw !important;
+    font-size: 8vw !important;
     z-index: 5;
   }
 
@@ -479,7 +480,7 @@ svg {
     position: sticky;
     top: 1em;
     padding: .1em;
-    width: 50vw;
+    width: 80vw;
     height: fit-content;
     background-color: #e0a1a1;
     border-radius: 1em;
@@ -499,9 +500,9 @@ svg {
   .play {
     position: absolute;
     display: flex;
-    top: 340vh;
+    top: 440vh;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 90vw;
     background-image: linear-gradient(#e0a1a1 70%, #ff006a);
     align-self: center;
@@ -516,12 +517,12 @@ svg {
 
   .blog {
     position: absolute;
-    top: 470vh;
+    top: 670vh;
   }
 
   .contact {
     position: absolute;
-    top: 520vh;
+    top: 720vh;
     width: 100vw;
     align-self: center;
   }
