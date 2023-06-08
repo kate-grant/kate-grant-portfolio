@@ -82,8 +82,6 @@ const DeskTopLayout = () => {
 
 
   return (
-    // <body className={styles.body}>
-
       <main className={styles.main}>
           <h1 id="about" className={styles.h1}>KATE GRANT</h1>
           <section id="animationContainer" className={styles.animationContainer}>
@@ -177,7 +175,6 @@ const DeskTopLayout = () => {
           </section>
           <Terminal className={styles.terminal}/>
       </main>
-    // </body>
   )
 }
 
