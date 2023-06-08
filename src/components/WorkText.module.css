@@ -16,9 +16,17 @@ text {
   font-size: 1rem;
   fill: #ff006a;
   z-index: 7;
-  /* fill: #e0a1a1; */
-  /* mix-blend-mode: multiply; */
-  /* fill: #ddbff5; */
   transform: rotate(5deg);
 }
 
+@media only screen and (max-width: 500px) {
+  text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    fill: #ff006a;
+    z-index: 7;
+    transform: rotate(5deg);
+  }
+
+}
