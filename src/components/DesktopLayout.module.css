@@ -390,6 +390,9 @@ svg {
 }
 
 @media only screen and (max-width: 800px) {
+  .main {
+    overflow: hidden;
+  }
   .h2 {
     font-family: 'Syne', sans-serif;
     font-weight: 500;
